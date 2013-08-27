@@ -1,5 +1,5 @@
 set :application, 'Rhubarb Config'
-set :repo_url, 'git@github.com:ua-eas/katt-kfs-rhubarb-config.git'
+set :repo_url, 'https://github.com/ua-eas/katt-kfs-rhubarb-config.git'
 
 set :deploy_to, '/etc/opt/kuali/rhubarb/rhubarb-1.0'
 set :scm, :git
