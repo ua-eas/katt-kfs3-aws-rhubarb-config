@@ -2,37 +2,37 @@
 name: UAF-EINV-ASM-SCIQ
 outputs:
   start:
-    subject: %%ENV - UAF-EINV-ASM-SCIQ - Start Notice
+    subject: ENV - UAF-EINV-ASM-SCIQ - Start Notice
     message: >
-      %%DATE %%TIME - The 'UAF-EINV-ASM-SCIQ' process has started.
+      DATE TIME - The 'UAF-EINV-ASM-SCIQ' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
-    subject: %%ENV - UAF-EINV-ASM-SCIQ - Logs Email
+    subject: ENV - UAF-EINV-ASM-SCIQ - Logs Email
     message: >
       Please find the attached log(s) for the  'UAF-EINV-ASM-SCIQ' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    - logs
-    attachments_globs:
-    - kfs-ein-scikf.log
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [kfs-ein-scikf.log]
   success:
-    subject: %%ENV - UAF-EINV-ASM-SCIQ - SUCCESS, Sciquest eInvoice file sent to KFS
+    subject: ENV - UAF-EINV-ASM-SCIQ - SUCCESS, Sciquest eInvoice file sent to KFS
     message: >
       Job name: KFS-EIN-SCIKF
-      Run date: %%$DATE %%TIME
+      Run date: DATE TIME
       
       This is an automated message. Please do not reply.
     to:
     - FSO_EIRT_ADDRESS
     - KFS_BSA_ADDRESS
     cc:
-    attachments_dir:
-    - logs
-    attachments_globs:
-    - kfs-ein-scikf.log
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [kfs-ein-scikf.log]

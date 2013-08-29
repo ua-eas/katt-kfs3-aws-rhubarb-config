@@ -2,27 +2,27 @@
 name: UAF-LABORINT-DLV-CALCERERPT
 outputs:
   start:
-    subject: %%ENV - UAF-LABORINT-DLV-CALCERERPT - Start Notice
+    subject: ENV - UAF-LABORINT-DLV-CALCERERPT - Start Notice
     message: >
       The 'UAF-LABORINT-DLV-CALCERERPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
-    subject: %%ENV - UAF-LABORINT-DLV-CALCERERPT - Log Email
+    subject: ENV - UAF-LABORINT-DLV-CALCERERPT - Log Email
     message: >
       Please find the attached log(s) for the  'UAF-LABORINT-DLV-CALCERERPT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   report:
-    subject: %%ENV - UAF-LABORINT-DLV-CALCERERPT - Report Email
+    subject: ENV - UAF-LABORINT-DLV-CALCERERPT - Report Email
     message: >
-      %%$DATE %%TIME - Attached is the report that shows the results and/or error
+      DATE TIME - Attached is the report that shows the results and/or error
       conditions that have resulted from performing the ERE fringe calculations on the
       UAccess Employee interface files. The calculations would have occurred on
       any salary encumbrance, position budget, or payroll actuals files received.
@@ -33,7 +33,7 @@ outputs:
     to:
     - FSO_KFS_REPORTS_FIN_MGMT
     cc:
-    attachments_dir:
+    attachment_dirs:
     - reports/ld
-    attachments_globs:
-    - laborEreJob_%%DATE*.txt
+    attachments:
+    - laborEreJob_DATE*.txt

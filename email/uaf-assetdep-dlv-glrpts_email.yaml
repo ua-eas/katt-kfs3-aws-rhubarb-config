@@ -2,35 +2,37 @@
 name: UAF-ASSETDEP-DLV-GLRPTS
 outputs:
   start:
-    subject: %%ENV - UAF-ASSETDEP-DLV-GLRPTS - Start Notice
+    subject: ENV - UAF-ASSETDEP-DLV-GLRPTS - Start Notice
     message: >
       The 'UAF-ASSETDEP-DLV-GLRPTS' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
-    subject: %%ENV - UAF-ASSETDEP-DLV-GLRPTS - Log Email
+    subject: ENV - UAF-ASSETDEP-DLV-GLRPTS - Log Email
     message: >
       Please find the attached log(s) for the  'UAF-ASSETDEP-DLV-GLRPTS' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [uaf-assetdep-dlv-glrpts.log]
   report:
-    subject: %%ENV - UAF-ASSETDEP-DLV-GLRPTS - General Ledger Processing Report(s) - FP Team Review
+    subject: ENV - UAF-ASSETDEP-DLV-GLRPTS - General Ledger Processing Report(s) - FP Team Review
     message: >
-      %%$DATE %%TIME -  Regarding the completion of GL Reports
+      DATE TIME -  Regarding the completion of GL Reports
     to:
     - FSO_KFS_REPORTS_FIN_MGMT
     cc:
-    attachments_dir:
-    - reports/gl
-    attachments_globs:
-    - glpe_ledger_%%DATE*.txt
-    - glpe_list_%%DATE*.txt
-    - scrubberJob_%%DATE*.txt
-    - posterJob_%%DATE*.txt
-    - balancing_%%DATE*.txt
+    attachment_dirs:
+    - BATCH_HOME/reports/gl
+    attachments:
+    - GlobFileFilterTracker: [glpe_ledger_DATE*.txt,
+                              glpe_list_DATE*.txt,
+                              scrubberJob_DATE*.txt,
+                              posterJob_DATE*.txt,
+                              balancing_DATE*.txt]

@@ -2,27 +2,27 @@
 name: UAF-GLCOLL-DLV-GLCOLLRPT
 outputs:
   start:
-    subject: %%ENV - UAF-GLCOLL-DLV-GLCOLLRPT - Start Notice
+    subject: ENV - UAF-GLCOLL-DLV-GLCOLLRPT - Start Notice
     message: >
       The 'UAF-GLCOLL-DLV-GLCOLLRPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
-    subject: %%ENV - UAF-GLCOLL-DLV-GLCOLLRPT - Log Email
+    subject: ENV - UAF-GLCOLL-DLV-GLCOLLRPT - Log Email
     message: >
       Please find the attached log(s) for the  'UAF-GLCOLL-DLV-GLCOLLRPT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   report:
-    subject: %%ENV - UAF-GLCOLL-DLV-GLCOLLRPT - GL Collector Reporting, CRT Team Review
+    subject: ENV - UAF-GLCOLL-DLV-GLCOLLRPT - GL Collector Reporting, CRT Team Review
     message: >
-      %%$DATE %%TIME - Attached are the report(s) that provide the results associated
+      DATE TIME - Attached are the report(s) that provide the results associated
       with the external file(s) processed for the general ledger through the collector
       process. These reports will provide information with regard to statistics and
       errors found, if any, from the external interface data files received as a
@@ -31,7 +31,7 @@ outputs:
     - FSO_KFS_REPORTS_FIN_MGMT
     cc:
     - KFS_BSA_ADDRESS
-    attachments_dir:
+    attachment_dirs:
     - reports/gl
-    attachments_globs:
-    - collector_%%DATE*.txt
+    attachments:
+    - collector_DATE*.txt

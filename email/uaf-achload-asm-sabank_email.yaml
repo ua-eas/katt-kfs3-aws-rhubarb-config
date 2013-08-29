@@ -2,34 +2,34 @@
 name: UAF-ACHLOAD-ASM-SABANK
 outputs:
   start:
-    subject: %%ENV - UAF-ACHLOAD-ASM-SABANK - Start Notice
+    subject: ENV - UAF-ACHLOAD-ASM-SABANK - Start Notice
     message: >
-      %%DATE %%TIME - The 'UAF-ACHLOAD-ASM-SABANK' process has started.
+      DATE TIME - The 'UAF-ACHLOAD-ASM-SABANK' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
-    subject: %%ENV - UAF-ACHLOAD-ASM-SABANK - Logs Email
+    subject: ENV - UAF-ACHLOAD-ASM-SABANK - Logs Email
     message: >
       Please find the attached log(s) for the  'UAF-ACHLOAD-ASM-SABANK' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    - logs
-    attachments_globs:
-    - kfs-ach-sbankkf.log
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [kfs-ach-sbankkf.log]
   success:
-    subject: %%ENV - UAF-ACHLOAD-ASM-SABANK - SUCCESS, SA ACH Bank file sent
+    subject: ENV - UAF-ACHLOAD-ASM-SABANK - SUCCESS, SA ACH Bank file sent
     message: >
-      Job name: KFS-ACH-SBANKKF
-      Date: %%$DATE %%TIME
+      Job Name: UAF-ACHLOAD-ASM-SABANK
+      Date: DATE TIME
     to:
     - CHECK_CONTROL_ADDRESS
     cc:
-    attachments_dir:
-    - logs
-    attachments_globs:
-    - kfs-ach-sbankkf.log
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [kfs-ach-sbankkf.log]

@@ -2,27 +2,27 @@
 name: UAF-GLNITEOUT-DLV-GLCPRPT
 outputs:
   start:
-    subject: %%ENV - UAF-GLNITEOUT-DLV-GLCPRPT - Start Notice
+    subject: ENV - UAF-GLNITEOUT-DLV-GLCPRPT - Start Notice
     message: >
       The 'UAF-GLNITEOUT-DLV-GLCPRPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
-    subject: %%ENV - UAF-GLNITEOUT-DLV-GLCPRPT - Log Email
+    subject: ENV - UAF-GLNITEOUT-DLV-GLCPRPT - Log Email
     message: >
       Please find the attached log(s) for the  'UAF-GLNITEOUT-DLV-GLCPRPT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   report:
-    subject: %%ENV - UAF-GLNITEOUT-DLV-GLCPRPT - GLCP Results Report(s)
+    subject: ENV - UAF-GLNITEOUT-DLV-GLCPRPT - GLCP Results Report(s)
     message: >
-      %%$DATE %%TIME - Attached is/are the report(s) that show the results and/or
+      DATE TIME - Attached is/are the report(s) that show the results and/or
       provide information on any error conditions found, if any, as a result of the
       general ledger correction document files processed for the day.
       
@@ -33,7 +33,7 @@ outputs:
     - FSO_KFS_REPORTS_FIN_MGMT
     cc:
     - KFS_BSA_ADDRESS
-    attachments_dir:
+    attachment_dirs:
     - reports/gl
-    attachments_globs:
-    - glcp_*_%%DATE*.txt
+    attachments:
+    - glcp_*_DATE*.txt

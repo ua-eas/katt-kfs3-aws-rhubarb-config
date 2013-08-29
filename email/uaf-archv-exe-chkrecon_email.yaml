@@ -2,42 +2,45 @@
 name: UAF-ARCHV-EXE-CHKRECON
 outputs:
   start:
-    subject: DEV - UAF-ARCHV-EXE-CHKRECON - Start Notice
+    subject: ENV - UAF-ARCHV-EXE-CHKRECON - Start Notice
     message: >
       The 'UAF-ARCHV-EXE-CHKRECON' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
-    subject: %%ENV - UAF-ARCHV-EXE-CHKRECON - Logs Email
+    subject: ENV - UAF-ARCHV-EXE-CHKRECON - Logs Email
     message: >
       Please find the attached log(s) for the  'UAF-ARCHV-EXE-CHKRECON' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    - logs
-    attachments_globs:
-    - kfs-bnk-ckrecna.log
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [kfs-bnk-ckrecna.log]
   report:
-    subject: DEV - UAF-ARCHV-EXE-CHKRECON - Report Email
+    subject: ENV - UAF-ARCHV-EXE-CHKRECON - Report Email
     message: >
       Please find the attached report(s) for the  'UAF-ARCHV-EXE-CHKRECON' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   success:
-    subject: %%ENV - UAF-ARCHV-EXE-CHKRECON - (PRD) BATCH STATUS: Bank Transaction processing segment has finished
+    subject: ENV - UAF-ARCHV-EXE-CHKRECON - (PRD) BATCH STATUS: Bank Transaction processing segment has finished
     message: >
-      0088As of %%$DATE at %%TIME, in PRD, the Bank Transaction processing segment has finished.00000234The receipt of this email does mean that archiving of Check Recon files has completed. However, it does not mean that all previous jobs in the chain succeeded (owing to the presence of jobs that were requested to continue on failure).00000015---------------0014%%$DATE.%%TIME0009KFS-BNK-CKRECNA
+      As of DATE at TIME, in ENV, the Bank Transaction processing segment has finished.
+      The receipt of this email does mean that archiving of Check Recon files has completed.
+      However, it does not mean that all previous jobs in the chain succeeded (owing to the
+      presence of jobs that were requested to continue on failure).
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    - logs
-    attachments_globs:
-    - kfs-bnk-ckrecna.log
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [kfs-bnk-ckrecna.log]

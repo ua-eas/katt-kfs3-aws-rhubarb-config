@@ -2,34 +2,34 @@
 name: UAF-LABORINT-ASM-HCMSAL
 outputs:
   start:
-    subject: %%ENV - UAF-LABORINT-ASM-HCMSAL - Start Notice
+    subject: ENV - UAF-LABORINT-ASM-HCMSAL - Start Notice
     message: >
-      %%DATE %%TIME - The 'UAF-LABORINT-ASM-HCMSAL' process has started.
+      DATE TIME - The 'UAF-LABORINT-ASM-HCMSAL' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
-    subject: %%ENV - UAF-LABORINT-ASM-HCMSAL - Logs Email
+    subject: ENV - UAF-LABORINT-ASM-HCMSAL - Logs Email
     message: >
       Please find the attached log(s) for the  'UAF-LABORINT-ASM-HCMSAL' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    - logs
-    attachments_globs:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
     - kfs-lbi-lldgrkf.log
   success:
-    subject: %%ENV - UAF-LABORINT-ASM-HCMSAL - SUCCESS, HCM salary and wage file sent to KFS
+    subject: ENV - UAF-LABORINT-ASM-HCMSAL - SUCCESS, HCM salary and wage file sent to KFS
     message: >
       Job name: UAF-LABORINT-ASM-HCMSAL
-      Run date: %%$DATE %%TIME
+      Run date: DATE TIME
     to:
     - FSO_PAYROLL_ADDRESS
     cc:
-    attachments_dir:
-    - logs
-    attachments_globs:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
     - kfs-lbi-lldgrkf.log

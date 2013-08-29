@@ -7,36 +7,24 @@ outputs:
       The 'UAF-ARCHV-EXE-BANK' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
-    - JULIE_WINGATE_ADDRESS
-    - HEATHER_LO_ADDRESS
-    - JOSH_SHALOO_ADDRESS
-    - SCOTT_SKINNER_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
     subject: DEV - UAF-ARCHV-EXE-BANK - Log Email
     message: >
       Please find the attached log(s) for the  'UAF-ARCHV-EXE-BANK' process.
     to:
     - KATT_AUTOMATION_ADDRESS
-    - JULIE_WINGATE_ADDRESS
-    - HEATHER_LO_ADDRESS
-    - JOSH_SHALOO_ADDRESS
-    - SCOTT_SKINNER_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   report:
     subject: DEV - UAF-ARCHV-EXE-BANK - Report Email
     message: >
       Please find the attached report(s) for the  'UAF-ARCHV-EXE-BANK' process.
     to:
     - KATT_AUTOMATION_ADDRESS
-    - JULIE_WINGATE_ADDRESS
-    - HEATHER_LO_ADDRESS
-    - JOSH_SHALOO_ADDRESS
-    - SCOTT_SKINNER_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:

@@ -12,8 +12,8 @@ outputs:
     - JOSH_SHALOO_ADDRESS
     - SCOTT_SKINNER_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
     subject: DEV - UAF-ARCHV-EXE-CUSTINV - Log Email
     message: >
@@ -25,8 +25,8 @@ outputs:
     - JOSH_SHALOO_ADDRESS
     - SCOTT_SKINNER_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   report:
     subject: DEV - UAF-ARCHV-EXE-CUSTINV - Report Email
     message: >
@@ -38,5 +38,5 @@ outputs:
     - JOSH_SHALOO_ADDRESS
     - SCOTT_SKINNER_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:

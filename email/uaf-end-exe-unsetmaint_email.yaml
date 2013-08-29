@@ -2,35 +2,35 @@
 name: UAF-END-EXE-UNSETMAINT
 outputs:
   start:
-    subject: %%ENV - UAF-END-EXE-UNSETMAINT - Start Notice
+    subject: ENV - UAF-END-EXE-UNSETMAINT - Start Notice
     message: >
-      %%DATE %%TIME - The 'UAF-END-EXE-UNSETMAINT' process has started.
+      DATE TIME - The 'UAF-END-EXE-UNSETMAINT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
-    subject: %%ENV - UAF-END-EXE-UNSETMAINT - Logs Email
+    subject: ENV - UAF-END-EXE-UNSETMAINT - Logs Email
     message: >
       Please find the attached log(s) for the  'UAF-END-EXE-UNSETMAINT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    - logs
-    attachments_globs:
-    - kfs-red-batends.log
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [kfs-red-batends.log]
   success:
-    subject: %%ENV - UAF-END-EXE-UNSETMAINT - SUCCESS, KFS user access has been re-enabled
+    subject: ENV - UAF-END-EXE-UNSETMAINT - SUCCESS, KFS user access has been re-enabled
     message: >
-      %%$DATE at %%TIME - User access to the %ENV system has been requested to be
+      DATE at TIME - User access to the %ENV system has been requested to be
       restored. It may take up to ten minutes for the ACE to actually let people back
       in.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    - logs
-    attachments_globs:
-    - kfs-red-batends.log
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [kfs-red-batends.log]

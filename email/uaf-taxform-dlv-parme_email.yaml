@@ -2,27 +2,27 @@
 name: UAF-TAXFORM-DLV-PARME
 outputs:
   start:
-    subject: %%ENV - UAF-TAXFORM-DLV-PARME - Start Notice
+    subject: ENV - UAF-TAXFORM-DLV-PARME - Start Notice
     message: >
       The 'UAF-TAXFORM-DLV-PARME' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
-    subject: %%ENV - UAF-TAXFORM-DLV-PARME - Log Email
+    subject: ENV - UAF-TAXFORM-DLV-PARME - Log Email
     message: >
       Please find the attached log(s) for the  'UAF-TAXFORM-DLV-PARME' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   report:
-    subject: %%ENV - UAF-TAXFORM-DLV-PARME - 1099 Tax Processing Information
+    subject: ENV - UAF-TAXFORM-DLV-PARME - 1099 Tax Processing Information
     message: >
-      %%$DATE %%TIME - Please confirm/update 1099 form parms and that the current
+      DATE TIME - Please confirm/update 1099 form parms and that the current
       year IRS1099 form has been loaded into KFS. There are 1099 parameters that have
       the coordinates for this form. These parameters may be adjusted each year. Also
       notify development that KFS-TXF-EMAIL will need to be updated to look in the
@@ -30,5 +30,5 @@ outputs:
     to:
     - FSO_1099_TEAM_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:

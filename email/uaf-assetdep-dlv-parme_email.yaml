@@ -2,27 +2,29 @@
 name: UAF-ASSETDEP-DLV-PARME
 outputs:
   start:
-    subject: %%ENV - UAF-ASSETDEP-DLV-PARME - Start Notice
+    subject: ENV - UAF-ASSETDEP-DLV-PARME - Start Notice
     message: >
       The 'UAF-ASSETDEP-DLV-PARME' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
-    subject: %%ENV - UAF-ASSETDEP-DLV-PARME - Log Email
+    subject: ENV - UAF-ASSETDEP-DLV-PARME - Log Email
     message: >
       Please find the attached log(s) for the  'UAF-ASSETDEP-DLV-PARME' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [uaf-assetdep-dlv-parme.log]
   report:
-    subject: %%ENV - UAF-ASSETDEP-DLV-PARME - Check prior to close of fiscal year
+    subject: ENV - UAF-ASSETDEP-DLV-PARME - Check prior to close of fiscal year
     message: >
-      %%$DATE %%TIME - The request to execute the Asset Depreciation Batch Job has
+      DATE TIME - The request to execute the Asset Depreciation Batch Job has
       been received, but has been placed on hold. Please review the KFS parameter
       DEPRECIATION_RUN_DATE found within the KFS-CAM namespace to ensure it is set
       appropriately for the job to run as desired.
@@ -38,5 +40,5 @@ outputs:
       Select KFS-CAM in the Namespace Code field before performing the 'Search'
     to:
     - KFS_CAPITAL_ASSETS_ADDRESS
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:

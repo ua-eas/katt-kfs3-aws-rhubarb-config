@@ -2,27 +2,27 @@
 name: UAF-LABORMNT-DLV-LABPRRPT
 outputs:
   start:
-    subject: %%ENV - UAF-LABORMNT-DLV-LABPRRPT - Start Notice
+    subject: ENV - UAF-LABORMNT-DLV-LABPRRPT - Start Notice
     message: >
       The 'UAF-LABORMNT-DLV-LABPRRPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
-    subject: %%ENV - UAF-LABORMNT-DLV-LABPRRPT - Log Email
+    subject: ENV - UAF-LABORMNT-DLV-LABPRRPT - Log Email
     message: >
       Please find the attached log(s) for the  'UAF-LABORMNT-DLV-LABPRRPT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   report:
-    subject: %%ENV - UAF-LABORMNT-DLV-LABPRRPT - Labor Ledger Processing Report(s), FP Team Review
+    subject: ENV - UAF-LABORMNT-DLV-LABPRRPT - Labor Ledger Processing Report(s), FP Team Review
     message: >
-      %%$DATE %%TIME - Attached are the reports that provide the results associated
+      DATE TIME - Attached are the reports that provide the results associated
       with the batch processing for the labor ledger. These reports will provide
       information with regard to statistics and errors found, if any, from any
       external files or internal documents processed associated with labor
@@ -31,10 +31,10 @@ outputs:
     to:
     - FSO_PAYROLL_ADDRESS
     cc:
-    attachments_dir:
+    attachment_dirs:
     - reports/ld
-    attachments_globs:
-    - llpe_ledger_%%DATE*.txt
-    - laborScrubberJob_%%DATE*.txt
-    - laborBalancing_%%DATE*.txt
-    - laborPosterJob_%%DATE*.txt
+    attachments:
+    - llpe_ledger_DATE*.txt
+    - laborScrubberJob_DATE*.txt
+    - laborBalancing_DATE*.txt
+    - laborPosterJob_DATE*.txt

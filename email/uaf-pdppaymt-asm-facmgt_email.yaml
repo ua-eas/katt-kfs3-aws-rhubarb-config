@@ -2,36 +2,36 @@
 name: UAF-PDPPAYMT-ASM-FACMGT
 outputs:
   start:
-    subject: %%ENV - UAF-PDPPAYMT-ASM-FACMGT - Start Notice
+    subject: ENV - UAF-PDPPAYMT-ASM-FACMGT - Start Notice
     message: >
-      %%DATE %%TIME - The 'UAF-PDPPAYMT-ASM-FACMGT' process has started.
+      DATE TIME - The 'UAF-PDPPAYMT-ASM-FACMGT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
-    subject: %%ENV - UAF-PDPPAYMT-ASM-FACMGT - Logs Email
+    subject: ENV - UAF-PDPPAYMT-ASM-FACMGT - Logs Email
     message: >
       Please find the attached log(s) for the  'UAF-PDPPAYMT-ASM-FACMGT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    - logs
-    attachments_globs:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
     - kfs-sup-fmkf.log
   success:
-    subject: %%ENV - UAF-PDPPAYMT-ASM-FACMGT - SUCCESS, Facilities Management PDP file sent to KFS
+    subject: ENV - UAF-PDPPAYMT-ASM-FACMGT - SUCCESS, Facilities Management PDP file sent to KFS
     message: >
       Job name: UAF-PDPPAYMT-ASM-FACMGT
-      Run date: %%$DATE %%TIME
+      Run date: DATE TIME
     to:
     - FSO_PDP_ADDRESS
     - KFS_BSA_ADDRESS
     - SIMON_WHITE_ADDRESS
     cc:
-    attachments_dir:
-    - logs
-    attachments_globs:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
     - kfs-sup-fmkf.log

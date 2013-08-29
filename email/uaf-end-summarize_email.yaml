@@ -2,30 +2,30 @@
 name: UAF-END-SUMMARIZE
 outputs:
   start:
-    subject: %%ENV - UAF-END-SUMMARIZE - Start Notice
+    subject: ENV - UAF-END-SUMMARIZE - Start Notice
     message: >
-      %%DATE %%TIME - The 'UAF-END-SUMMARIZE' process has started.
+      DATE TIME - The 'UAF-END-SUMMARIZE' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
-    subject: %%ENV - UAF-END-SUMMARIZE - Logs Email
+    subject: ENV - UAF-END-SUMMARIZE - Logs Email
     message: >
       Please find the attached log(s) for the  'UAF-END-SUMMARIZE' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    - logs
-    attachments_globs:
-    - kfs-ind-nbisgds.log
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [kfs-ind-nbisgds.log]
   success:
-    subject: %%ENV - UAF-END-SUMMARIZE - SUCCESS, Weekday financial processing has completed
+    subject: ENV - UAF-END-SUMMARIZE - SUCCESS, Weekday financial processing has completed
     message: >
-      %%$DATE.%%TIME - The financial processing portion of the %%ENV nightly batch
-      for today, %%$DATE, has completed at %%TIME.
+      DATE TIME - The financial processing portion of the ENV nightly batch
+      for today, DATE, has completed at TIME.
       
       That means that the following jobs streams have all finished executing:
       Archibus Processing
@@ -51,7 +51,7 @@ outputs:
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    - logs
-    attachments_globs:
-    - kfs-ind-nbisgds.log
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [kfs-ind-nbisgds.log]
