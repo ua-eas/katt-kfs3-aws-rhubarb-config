@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-labhist-dlv-labhistrpt.log]
   report:
     subject: ENV - UAF-LABHIST-DLV-LABHISTRPT - Labor Balancing Reports
     message: >
@@ -27,6 +29,6 @@ outputs:
     - FSO_KFS_REPORTS_FIN_MGMT
     cc:
     attachment_dirs:
-    - reports/ld
+    - BATCH_HOME/reports/ld
     attachments:
-    - laborBalancing_DATE*.txt
+    - GlobFileFilterTracker: [laborBalancing_*.txt]

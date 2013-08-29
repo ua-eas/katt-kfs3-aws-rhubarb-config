@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-gle-payrlkf.log
+    - GlobFileFilter: [UAF-GLENTFD-ASM-HCMPAY.log]
   success:
     subject: ENV - UAF-GLENTFD-ASM-HCMPAY - SUCCESS, HCM payroll liabilities file sent to KFS
     message: >
@@ -32,4 +32,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-gle-payrlkf.log
+    - GlobFileFilter: [UAF-GLENTFD-ASM-HCMPAY.log]

@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-glu-arkf.log
+    - GlobFileFilter: [kfs-glu-arkf.log]
   success:
     subject: ENV - UAF-GLCOLL-ASM-AZLAB - SUCCESS, ARL GL collector file sent to KFS
     message: >
@@ -33,4 +33,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-glu-arkf.log
+    - GlobFileFilter: [kfs-glu-arkf.log]

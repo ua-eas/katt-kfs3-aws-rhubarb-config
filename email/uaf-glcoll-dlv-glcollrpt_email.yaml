@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-glcoll-dlv-glcollrpt.log]
   report:
     subject: ENV - UAF-GLCOLL-DLV-GLCOLLRPT - GL Collector Reporting, CRT Team Review
     message: >
@@ -32,6 +34,6 @@ outputs:
     cc:
     - KFS_BSA_ADDRESS
     attachment_dirs:
-    - reports/gl
+    - BATCH_HOME/reports/gl
     attachments:
-    - collector_DATE*.txt
+    - GlobFileFilterTracker: [collector_DATE*.txt]

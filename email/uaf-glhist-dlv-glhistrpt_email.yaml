@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-glhist-dlv-glhistrpt]
   report:
     subject: ENV - UAF-GLHIST-DLV-GLHISTRPT - Poster Balancing Reports
     message: >
@@ -27,6 +29,6 @@ outputs:
     - FSO_KFS_REPORTS_FIN_MGMT
     cc:
     attachment_dirs:
-    - reports/gl
+    - BATCH_HOME/reports/gl
     attachments:
-    - balancing_DATE*.txt
+    - GlobFileFilterTracker: [balancing_DATE*.txt]

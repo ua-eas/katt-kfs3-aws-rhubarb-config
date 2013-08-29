@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-gle-saglkf.log
+    - GlobFileFilter: [uaf-glentfd-asm-sagl.log]
   success:
     subject: ENV - UAF-GLENTFD-ASM-SAGL - SUCCESS, SA GL transactions file sent to KFS
     message: >
@@ -32,4 +32,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-gle-saglkf.log
+    - GlobFileFilter: [uaf-glentfd-asm-sagl.log]

@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-glu-ptkf.log
+    - GlobFileFilter: [uaf-glcoll-asm-parktrn.log]
   success:
     subject: ENV - UAF-GLCOLL-ASM-PARKTRN - SUCCESS, Parking and Transportation GL collector file sent to KFS
     message: >
@@ -33,4 +33,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-glu-ptkf.log
+    - GlobFileFilter: [uaf-glcoll-asm-parktrn.log]

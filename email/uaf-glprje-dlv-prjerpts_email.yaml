@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-glprje-dlv-prjerpts.log]
   report:
     subject: ENV - UAF-GLPRJE-DLV-PRJERPTS - PRJE Processing Report(s), FP Team Review
     message: >
@@ -30,7 +32,7 @@ outputs:
     cc:
     - KFS_BSA_ADDRESS
     attachment_dirs:
-    - reports/prje
+    - BATCH_HOME/reports/prje
     attachments:
-    - prje_main_ledger_DATE*.txt
-    - prje_audit_DATE*.txt
+    - GlobFileFilterTracker: [prje_main_ledger_*.txt,
+                              prje_audit_*.txt]

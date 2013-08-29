@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-glu-ctkf.log
+    - GlobFileFilter: [uaf-glcoll-asm-techsvc.log]
   success:
     subject: ENV - UAF-GLCOLL-ASM-TECHSVC - SUCCESS, CTS GL collector file sent to KFS
     message: >
@@ -33,4 +33,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-glu-ctkf.log
+    - GlobFileFilter: [uaf-glcoll-asm-techsvc.log]

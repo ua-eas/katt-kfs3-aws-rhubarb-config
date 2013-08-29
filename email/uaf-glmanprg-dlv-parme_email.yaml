@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-glmanprg-dlv-parme.log]
   report:
     subject: ENV - UAF-GLMANPRG-DLV-PARME - Review and Confirm Manual Purge Parameters, Financial Processing Team Review 
     message: >

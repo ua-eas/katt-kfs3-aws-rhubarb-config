@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-glu-tlkf.log
+    - GlobFileFilter: [uaf-glcoll-asm-telcom.log]
   success:
     subject: ENV - UAF-GLCOLL-ASM-TELCOM - SUCCESS, Telecommunications GL collector file sent to KFS
     message: >
@@ -33,4 +33,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-glu-tlkf.log
+    - GlobFileFilter: [uaf-glcoll-asm-telcom.log]

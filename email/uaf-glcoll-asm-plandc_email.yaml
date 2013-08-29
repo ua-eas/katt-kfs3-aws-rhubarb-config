@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-glu-pdkf.log
+    - GlobFileFilter: [uaf-glcoll-asm-plandc.log]
   success:
     subject: ENV - UAF-GLCOLL-ASM-PLANDC - SUCCESS, Planning Design and Construction GL collector file sent to KFS
     message: >
@@ -34,4 +34,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-glu-pdkf.log
+    - GlobFileFilter: [uaf-glcoll-asm-plandc.log]

@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-glniteout-dlv-glcprpt.log]
   report:
     subject: ENV - UAF-GLNITEOUT-DLV-GLCPRPT - GLCP Results Report(s)
     message: >
@@ -34,6 +36,6 @@ outputs:
     cc:
     - KFS_BSA_ADDRESS
     attachment_dirs:
-    - reports/gl
+    - BATCH_HOME/reports/gl
     attachments:
-    - glcp_*_DATE*.txt
+    - GlobFileFilterTracker: [glcp_*_DATE*.txt]

@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-glentfd-dlv-glentrpt.log]
   report:
     subject: ENV - UAF-GLENTFD-DLV-GLENTRPT - Enterprise Feed Reporting - FP Team Review
     message: >
@@ -33,7 +35,7 @@ outputs:
     - KFS_BSA_ADDRESS
     - DBLEV_ADDRESS
     attachment_dirs:
-    - reports/gl
+    - BATCH_HOME/reports/gl
     attachments:
-    - enterprise_feed_DATE*.txt
+    - GlobFileFilterTracker: [enterprise_feed_*.txt]
     

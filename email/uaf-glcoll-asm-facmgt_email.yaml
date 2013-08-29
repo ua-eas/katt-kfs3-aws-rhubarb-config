@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-glu-fmkf.log
+    - GlobFileFilter: [uaf-glcoll-asm-facmgt.log]
   success:
     subject: ENV - UAF-GLCOLL-ASM-FACMGT - SUCCESS, Facilities Management GL collector file sent to KFS
     message: >
@@ -33,4 +33,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-glu-fmkf.log
+    - GlobFileFilter: [uaf-glcoll-asm-facmgt.log]

@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-glprje-dlv-parme.log]
   report:
     subject: ENV - UAF-GLPRJE-DLV-PARME - Review and Confirm Monthly PRJE Parameters, FP Team Review
     message: >
@@ -34,7 +36,7 @@ outputs:
       
       Reminder, parameters can be found in the following location in KFS:
       Administration Tab --> Configuration Section --> Functional Heading --> Parameter Hyperlink
-      Select KUALI-PRJE in the Namespace Code field before performing the 'Search'"
+      Select KUALI-PRJE in the Namespace Code field before performing the 'Search'
     to:
     - FSO_KFS_REPORTS_FIN_MGMT
     cc:

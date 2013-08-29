@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-indcost-dlv-glrpts.log]
   report:
     subject: ENV - UAF-INDCOST-DLV-GLRPTS - Indirect Cost Recovery Processing Report(s), FP Team Review
     message: >
@@ -33,8 +35,8 @@ outputs:
     - SPONSER_ADDRESS
     - KFS_BSA_ADDRESS
     attachment_dirs:
-    - reports/gl
+    - BATCH_HOME/reports/gl
     attachments:
-    - scrubberJob_DATE*.txt
-    - posterJob_DATE*.txt
-    - balancing_DATE*.txt
+    - GlobFileFilterTracker: [scrubberJob_*.txt,
+                              posterJob_*.txt,
+                              balancing_*.txt]

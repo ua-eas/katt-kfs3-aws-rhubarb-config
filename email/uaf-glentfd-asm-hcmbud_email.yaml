@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-gle-budgtkf.log
+    - GlobFileFilter: [uaf-glentfd-asm-hcmbud.log]
   success:
     subject: ENV - UAF-GLENTFD-ASM-HCMBUD - SUCCESS, HCM operational budget file sent to KFS
     message: >
@@ -34,4 +34,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-gle-budgtkf.log
+    - GlobFileFilter: [uaf-glentfd-asm-hcmbud.log]

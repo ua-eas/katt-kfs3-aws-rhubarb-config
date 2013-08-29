@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-glu-mpkf.log
+    - GlobFileFilter: [UAF-GLCOLL-ASM-MTRPOOL.log]
   success:
     subject: ENV - UAF-GLCOLL-ASM-MTRPOOL - SUCCESS, Motor Pool GL collector file sent to KFS
     message: >
@@ -33,4 +33,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-glu-mpkf.log
+    - GlobFileFilter: [UAF-GLCOLL-ASM-MTRPOOL.log]

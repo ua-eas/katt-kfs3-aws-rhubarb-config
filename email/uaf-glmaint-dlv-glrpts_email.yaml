@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-glmaint-dlv-glrpts.log]
   report:
     subject: ENV - UAF-GLMAINT-DLV-GLRPTS - General Ledger Processing Report(s), FP Team Review
     message: >
@@ -34,11 +36,11 @@ outputs:
     - KFS_BSA_ADDRESS
     - DBLEV_ADDRESS
     attachment_dirs:
-    - reports/gl
+    - BATCH_HOME/reports/gl
     attachments:
-    - glpe_ledger_DATE*.txt
-    - glpe_list_DATE*.txt
-    - sufficient_funds_DATE*.txt
-    - scrubberJob_DATE*.txt
-    - posterJob_DATE*.txt
-    - balancing_DATE*.txt
+    - GlobFileFilterTracker: [glpe_ledger_*.txt,
+                              glpe_list_*.txt,
+                              sufficient_funds_*.txt,
+                              scrubberJob_*.txt,
+                              posterJob_*.txt,
+                              balancing_*.txt]
