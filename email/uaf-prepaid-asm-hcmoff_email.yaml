@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-sai-hochkkf.log
+    - GlobFileFilter: [uaf-prepaid-asm-hcmoff.log]
   success:
     subject: ENV - UAF-PREPAID-ASM-HCMOFF - SUCCESS, HCM off-cycle checks file sent to KFS
     message: >
@@ -33,4 +33,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-sai-hochkkf.log
+    - GlobFileFilter: [uaf-prepaid-asm-hcmoff.log]

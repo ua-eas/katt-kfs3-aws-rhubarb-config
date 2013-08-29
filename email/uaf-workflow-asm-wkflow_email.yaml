@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-wfl-xmlsend.log
+    - GlobFileFilter: [uaf-workflow-asm-wkflow.log]
   success:
     subject: ENV - UAF-WORKFLOW-ASM-WKFLOW - SUCCESS
     message: >
@@ -32,4 +32,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-wfl-xmlsend.log
+    - GlobFileFilter: [uaf-workflow-asm-wkflow.log]

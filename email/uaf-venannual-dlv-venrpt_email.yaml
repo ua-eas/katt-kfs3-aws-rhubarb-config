@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-venannual-dlv-venrpt.log]
   report:
     subject: ENV - UAF-VENANNUAL-DLV-VENRPT - ASU Customs File
     message: >
@@ -27,6 +29,6 @@ outputs:
     - UA_CUSTOMS_ADDRESS
     cc:
     attachment_dirs:
-    - pdp/ecustoms
+    - BATCH_HOME/pdp/ecustoms
     attachments:
-    - UA_ECUSTOMS.data
+    - GlobFileFilter: [UA_ECUSTOMS.data]

@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-pdp-dlv-pdpledrpt.log]
   report:
     subject: ENV - UAF-PDP-DLV-PDPLEDRPT - General Ledger Report(s) from PDP, FP/PDP/AP Review Teams
     message: >
@@ -33,6 +35,6 @@ outputs:
     - CHECK_CONTROL_ADDRESS
     - KFS_BSA_ADDRESS
     attachment_dirs:
-    - reports/pdp
+    - BATCH_HOME/reports/pdp
     attachments:
-    - pdp_ledger_DATE*.txt
+    - GlobFileFilterTracker: [pdp_ledger_*.txt]

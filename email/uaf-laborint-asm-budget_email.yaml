@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-lbi-bdsalkf.log
+    - GlobFileFilter: [uaf-laborint-asm-budget.log]
   success:
     subject: ENV - UAF-LABORINT-ASM-BUDGET - SUCCESS, HCM position budget file sent to KFS
     message: >
@@ -33,4 +33,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-lbi-bdsalkf.log
+    - GlobFileFilter: [uaf-laborint-asm-budget.log]

@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-prepaid-dlv-prepdrpt.log]
   report:
     subject: ENV - UAF-PREPAID-DLV-PREPDRPT - SA/HCM Payment Interface Report, PDP/AP Team Review
     message: >
@@ -29,6 +31,6 @@ outputs:
     - FSO_PDP_ADDRESS
     cc:
     attachment_dirs:
-    - reports/pdp/prepaidChecks
+    - BATCH_HOME/reports/pdp/prepaidChecks
     attachments:
-    - *.xml.report
+    - GlobFileFilterTracker: [*.xml.report]

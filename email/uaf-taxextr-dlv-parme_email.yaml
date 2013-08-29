@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-taxextr-dlv-parme.log]
   report:
     subject: ENV - UAF-TAXEXTR-DLV-PARME - Review and Confirm Annual 1099 Extract Parameters, AP Team Review
     message: >

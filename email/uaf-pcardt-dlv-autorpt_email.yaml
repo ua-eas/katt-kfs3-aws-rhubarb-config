@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-pcardt-dlv-autorpt.log]
   report:
     subject: ENV - UAF-PCARDT-DLV-AUTORPT - PCard Validation Errors, PACS/AP Team Review
     message: >
@@ -30,6 +32,6 @@ outputs:
     cc:
     - KFS_PCARD_ERROR_ADDRESS
     attachment_dirs:
-    - reports/fp
+    - BATCH_HOME/reports/fp
     attachments:
-    - pcdo_reroute_errors_*.txt
+    - GlobFileFilterTracker: [pcdo_reroute_errors_*.txt]

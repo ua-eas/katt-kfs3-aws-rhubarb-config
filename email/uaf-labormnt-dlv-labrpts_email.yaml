@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-labormnt-dlv-labrpts.log]
   report:
     subject: ENV - UAF-LABORMNT-DLV-LABRPTS - Labor Processing Report(s) AFTER Fringe Budget Sweep, FP Team Review
     message: >
@@ -35,7 +37,7 @@ outputs:
     cc:
     - FSO_KFS_REPORTS_FIN_MGMT
     attachment_dirs:
-    - reports/ld
+    - BATCH_HOME/reports/ld
     attachments:
-    - laborScrubberJob_DATE*.txt
-    - laborPosterJob_DATE*.txt
+    - GlobFileFilterTracker: [laborScrubberJob_*.txt,
+                              laborPosterJob_*.txt]

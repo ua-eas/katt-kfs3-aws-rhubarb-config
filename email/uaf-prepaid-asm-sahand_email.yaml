@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-sai-odchkkf.log
+    - GlobFileFilter: [uaf-prepaid-asm-sahand.log]
   success:
     subject: ENV - UAF-PREPAID-ASM-SAHAND - SUCCESS, SA hand drawn checks file sent to KFS
     message: >
@@ -33,4 +33,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-sai-odchkkf.log
+    - GlobFileFilter: [uaf-prepaid-asm-sahand.log]

@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-laborint-dlv-encadjrpt.log]
   report:
     subject: ENV - UAF-LABORINT-DLV-ENCADJRPT - Salary Encumbrance Adjustments Report, FP Team Review
     message: >
@@ -35,6 +37,6 @@ outputs:
     - FSO_PAYROLL_ADDRESS
     cc:
     attachment_dirs:
-    - reports/ld
+    - BATCH_HOME/reports/ld
     attachments:
-    - llEncumbranceAdjustmentReportDATE*.txt
+    - GlobFileFilterTracker: [llEncumbranceAdjustmentReport*.txt]

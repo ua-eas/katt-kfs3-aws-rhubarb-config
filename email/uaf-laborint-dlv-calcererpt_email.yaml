@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-laborint-dlv-calcererpt.log]
   report:
     subject: ENV - UAF-LABORINT-DLV-CALCERERPT - Report Email
     message: >
@@ -34,6 +36,6 @@ outputs:
     - FSO_KFS_REPORTS_FIN_MGMT
     cc:
     attachment_dirs:
-    - reports/ld
+    - BATCH_HOME/reports/ld
     attachments:
-    - laborEreJob_DATE*.txt
+    - GlobFileFilterTracker: [laborEreJob_*.txt]

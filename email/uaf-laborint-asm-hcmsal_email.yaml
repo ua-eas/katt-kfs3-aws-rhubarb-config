@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-lbi-lldgrkf.log
+    - GlobFileFilter: [uaf-laborint-asm-hcmsal.log]
   success:
     subject: ENV - UAF-LABORINT-ASM-HCMSAL - SUCCESS, HCM salary and wage file sent to KFS
     message: >
@@ -32,4 +32,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-lbi-lldgrkf.log
+    - GlobFileFilter: [uaf-laborint-asm-hcmsal.log]

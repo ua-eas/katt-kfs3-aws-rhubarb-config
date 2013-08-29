@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-prepaid-dlv-hcmoffrpt.log]
   report:
     subject: ENV - UAF-PREPAID-DLV-HCMOFFRPT - HCM off-cycle checks, PDP/APTeam Review
     message: >
@@ -31,6 +33,6 @@ outputs:
     - CHECK_CONTROL_ADDRESS
     - KFS_BSA_ADDRESS
     attachment_dirs:
-    - staging/pdp/prepaidChecks
+    - BATCH_HOME/staging/pdp/prepaidChecks
     attachments:
-    - PSHCM_OFFCYCLE_*.csv
+    - GlobFileFilterTracker: [PSHCM_OFFCYCLE_*.csv]

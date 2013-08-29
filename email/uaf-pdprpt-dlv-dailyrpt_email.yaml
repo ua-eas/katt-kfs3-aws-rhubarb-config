@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    BATCH_HOME/logs
     attachments:
+    GlobFileFilter: [uaf-pdprpt-dlv-dailyrpt.log]
   report:
     subject: ENV - UAF-PDPRPT-DLV-DAILYRPT - PDP/AP/CRT Team Review
     message: >
@@ -37,6 +39,6 @@ outputs:
     - FEDEX_ADMIN_ADDRESS
     cc:
     attachment_dirs:
-    - reports/pdp
+    - BATCH_HOME/reports/pdp
     attachments:
-    - pdp_daily_DATE*.pdf
+    - GlobFileFilterTracker: [pdp_daily_*.pdf]

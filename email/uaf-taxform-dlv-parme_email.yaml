@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-taxform-dlv-parme.log]
   report:
     subject: ENV - UAF-TAXFORM-DLV-PARME - 1099 Tax Processing Information
     message: >

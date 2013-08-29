@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-labormnt-dlv-ereswrpts.log]
   report:
     subject: ENV - UAF-LABORMNT-DLV-ERESWRPTS - Labor Processing Report(s) AFTER Fringe Budget Sweep, FP Team Review
     message: >
@@ -36,7 +38,6 @@ outputs:
     cc:
     - FSO_KFS_REPORTS_FIN_MGMT
     attachment_dirs:
-    - reports/ld
+    - BATCH_HOME/reports/ld
     attachments:
-    - laborBalancing_DATE*.txt
-    - labor_gl_summary_ledger_DATE*.txt
+    - GlobFileFilterTracker: [laborBalancing_*.txt, labor_gl_summary_ledger_*.txt]

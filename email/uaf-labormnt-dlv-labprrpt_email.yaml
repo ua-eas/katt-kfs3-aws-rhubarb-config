@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    GlobFileFilter: [uaf-labormnt-dlv-labprrpt.log]
   report:
     subject: ENV - UAF-LABORMNT-DLV-LABPRRPT - Labor Ledger Processing Report(s), FP Team Review
     message: >
@@ -32,9 +34,9 @@ outputs:
     - FSO_PAYROLL_ADDRESS
     cc:
     attachment_dirs:
-    - reports/ld
+    - BATCH_HOME/reports/ld
     attachments:
-    - llpe_ledger_DATE*.txt
-    - laborScrubberJob_DATE*.txt
-    - laborBalancing_DATE*.txt
-    - laborPosterJob_DATE*.txt
+    - GlobFileFilterTracker: [llpe_ledger_*.txt,
+                              laborScrubberJob_*.txt,
+                              laborBalancing_*.txt,
+                              laborPosterJob_*.txt]

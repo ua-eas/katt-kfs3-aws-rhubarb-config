@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-pcd-cardkf.log
+    - GlobFileFilter: [UAF-pcardh-trf-jpmc-pull.log]
   success:
     subject: ENV - UAF-PCARDH-TRF-JPMC-PULL - SUCCESS, PCard cardholder file sent to KFS
     message: >
@@ -33,4 +33,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-pcd-cardkf.log
+    - GlobFileFilter: [UAF-pcardh-trf-jpmc-pull.log]

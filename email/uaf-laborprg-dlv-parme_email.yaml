@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-laborprg-dlv-parme.log]
   report:
     subject: ENV - UAF-LABORPRG-DLV-PARME - Review and Confirm Labor Purge Parameters, Labor Ledger Team Review
     message: >

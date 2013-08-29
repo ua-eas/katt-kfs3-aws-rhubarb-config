@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-shp-shipkf.log
+    - GlobFileFilter: [uaf-ship-trf-fedex-pull.log]
   success:
     subject: ENV - UAF-SHIP-TRF-FEDEX-PULL - SUCCESS, Shipping file sent
     message: >
@@ -32,4 +32,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-shp-shipkf.log
+    - GlobFileFilter: [uaf-ship-trf-fedex-pull.log]

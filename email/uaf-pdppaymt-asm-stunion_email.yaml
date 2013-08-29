@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-sup-sukf.log
+    - GlobFileFilter: [uaf-pdppaymt-asm-stunion.log]
   success:
     subject: ENV - UAF-PDPPAYMT-ASM-STUNION - SUCCESS, Student Union PDP file sent to KFS
     message: >
@@ -34,4 +34,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-sup-sukf.log
+    - GlobFileFilter: [uaf-pdppaymt-asm-stunion.log]

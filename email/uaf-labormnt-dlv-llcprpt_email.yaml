@@ -18,7 +18,9 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
+    - BATCH_HOME/logs
     attachments:
+    - GlobFileFilter: [uaf-labormnt-dlv-llcprpt.log]
   report:
     subject: ENV - UAF-LABORMNT-DLV-LLCPRPT - LLCP Results Report(s)
     message: >
@@ -34,6 +36,6 @@ outputs:
     cc:
     - FSO_KFS_REPORTS_FIN_MGMT
     attachment_dirs:
-    - reports/ld
+    - BATCH_HOME/reports/ld
     attachments:
-    - llcp_DATE*_*.txt
+    - GlobFileFilterTracker: [llcp_*_*.txt]

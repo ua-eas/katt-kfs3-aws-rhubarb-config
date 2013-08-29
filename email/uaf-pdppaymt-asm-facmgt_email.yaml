@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-sup-fmkf.log
+    - GlobFileFilter: [uaf-pdppaymt-asm-facmgt.log]
   success:
     subject: ENV - UAF-PDPPAYMT-ASM-FACMGT - SUCCESS, Facilities Management PDP file sent to KFS
     message: >
@@ -34,4 +34,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-sup-fmkf.log
+    - GlobFileFilter: [uaf-pdppaymt-asm-facmgt.log]

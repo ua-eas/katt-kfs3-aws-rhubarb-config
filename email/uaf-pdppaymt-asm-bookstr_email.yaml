@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-sup-bkkf.log
+    - GlobFileFilter: [uaf-pdppaymt-asm-bookstr.log]
   success:
     subject: ENV - UAF-PDPPAYMT-ASM-BOOKSTR - SUCCESS, Bookstore PDP file sent to KFS
     message: >
@@ -34,4 +34,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-sup-bkkf.log
+    - GlobFileFilter: [uaf-pdppaymt-asm-bookstr.log]

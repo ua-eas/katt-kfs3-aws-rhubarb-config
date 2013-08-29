@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-sup-sapdbkf.log
+    - GlobFileFilter: [uaf-pdppaymt-asm-sadisb.log]
   success:
     subject: ENV - UAF-PDPPAYMT-ASM-SADISB - SUCCESS, Student AP Disbursement file sent to KFS
     message: >
@@ -33,4 +33,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - kfs-sup-sapdbkf.log
+    - GlobFileFilter: [uaf-pdppaymt-asm-sadisb.log]
