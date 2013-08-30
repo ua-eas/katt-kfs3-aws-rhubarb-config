@@ -42,3 +42,16 @@ outputs:
     - BATCH_HOME/reports/pdp
     attachments:
     - GlobFileFilterTracker: [pdp_daily_*.pdf]
+  success:
+    subject: ENV - UAF-PDPRPT-DLV-DAILYRPT - SUCCESS 
+    message: >
+      Job name: UAF-PDPRPT-DLV-DAILYRPT
+      Run date: DATE TIME
+    to: 
+    - KATT_AUTOMATION_ADDRESS
+    cc: 
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [uaf-pdprpt-dlv-dailyrpt.log]
+
