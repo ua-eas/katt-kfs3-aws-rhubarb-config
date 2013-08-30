@@ -24,11 +24,9 @@ outputs:
   success:
     subject: ENV - UAF-TAXFORM-DLV-EMAIL - Success Email
     message: >
-      DATE TIME - The 'UAF-TAXFORM-DLV-EMAIL' job stream has completed successfully, please find the attached log.'
+      The 'UAF-TAXFORM-DLV-EMAIL' job completed successfully on DATE TIME. This corresponds to the 1099 tax processing.
     to:
-    - KATT_AUTOMATION_ADDRESS
+    - FSO_1099_TEAM_ADDRESS
     cc:
     attachments_dir:
-    - BATCH_HOME/logs
     attachments_globs:
-    - GlobFileFilter: [uaf-taxform-dlv-email.log]
