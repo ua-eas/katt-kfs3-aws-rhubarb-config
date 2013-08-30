@@ -34,4 +34,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/reports/ec
     attachments:
-    - GlobFileFilterTracker: [effort_extract_summary_DATE*.pdf]
+    - GlobFileFilterTracker: [effort_extract_summary_*.pdf]

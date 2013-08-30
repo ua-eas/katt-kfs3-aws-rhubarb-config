@@ -30,4 +30,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/reports/cam
     attachments:
-    - GlobFileFilterTracker: [*DATE*.PDF]
+    - GlobFileFilterTracker: [*.PDF]

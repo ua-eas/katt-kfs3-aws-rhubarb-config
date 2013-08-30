@@ -36,4 +36,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/reports/pdp
     attachments:
-    - GlobFileFilterTracker: [pdpLoadBankDataJob-ach_bank_audit_report_DATE*.txt]
+    - GlobFileFilterTracker: [pdpLoadBankDataJob-ach_bank_audit_report_*.txt]

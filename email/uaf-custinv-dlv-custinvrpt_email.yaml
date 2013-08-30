@@ -36,4 +36,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/reports/ar
     attachments:
-    - GlobFileFilterTracker: [customer_invoice_writeoff_DATE*.pdf]
+    - GlobFileFilterTracker: [customer_invoice_writeoff_*.pdf]

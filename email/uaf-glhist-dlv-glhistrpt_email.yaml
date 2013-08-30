@@ -31,4 +31,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/reports/gl
     attachments:
-    - GlobFileFilterTracker: [balancing_DATE*.txt]
+    - GlobFileFilterTracker: [balancing_*.txt]

@@ -38,4 +38,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/reports/gl
     attachments:
-    - GlobFileFilterTracker: [glcp_*_DATE*.txt]
+    - GlobFileFilterTracker: [glcp_*_*.txt]

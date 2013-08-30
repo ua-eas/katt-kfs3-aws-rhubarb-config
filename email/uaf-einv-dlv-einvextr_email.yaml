@@ -34,4 +34,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/reports/purap
     attachments:
-    - GlobFileFilterTracker: [electronicInvoiceExtractJob-DATE*.txt]
+    - GlobFileFilterTracker: [electronicInvoiceExtractJob-*.txt]

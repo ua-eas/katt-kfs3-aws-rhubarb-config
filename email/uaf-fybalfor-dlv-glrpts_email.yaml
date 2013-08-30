@@ -31,6 +31,6 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/reports/gl
     attachments:
-    - GlobFileFilterTracker: [scrubberJob_DATE*.txt,
-                              posterJob_DATE*.txt,
-                              balancing_DATE*.txt]
+    - GlobFileFilterTracker: [scrubberJob_*.txt,
+                              posterJob_*.txt,
+                              balancing_*.txt]

@@ -33,4 +33,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/staging/gl
     attachments:
-    - GlobFileFilterTracker: [year_end_encumbrance_closing_DATE*.txt]
+    - GlobFileFilterTracker: [year_end_encumbrance_closing_*.txt]

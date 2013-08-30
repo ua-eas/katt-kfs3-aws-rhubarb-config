@@ -43,11 +43,11 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/reports/gl
     attachments:
-    - GlobFileFilterTracker: [scrubberJob_DATE*.txt,
-                              posterJob_DATE*.txt,
-                              balancing_DATE*.txt]
+    - GlobFileFilterTracker: [scrubberJob_*.txt,
+                              posterJob_*.txt,
+                              balancing_*.txt]
   success:
-    subject: ENV - UAF-GLPRJE-DLV-GLRPTS - (PRD) BATCH STATUS: Month End processing segment has finished
+    subject: ENV - UAF-GLPRJE-DLV-GLRPTS - BATCH STATUS: Month End processing segment has finished
     message: >
       DATE TIME - Month End processing has completed. The receipt of
       this email does mean that the Month PRJE reports were mailed out (assuming attachments
