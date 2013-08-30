@@ -20,11 +20,11 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - GlobFileFilter: [kfs-red-batends.log]
+    - GlobFileFilter: [uaf-end-exe-unsetmaint.log]
   success:
     subject: ENV - UAF-END-EXE-UNSETMAINT - SUCCESS, KFS user access has been re-enabled
     message: >
-      DATE at TIME - User access to the %ENV system has been requested to be
+      DATE at TIME - User access to the ENV system has been requested to be
       restored. It may take up to ten minutes for the ACE to actually let people back
       in.
     to:
@@ -33,4 +33,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - GlobFileFilter: [kfs-red-batends.log]
+    - GlobFileFilter: [uaf-end-exe-unsetmaint.log]
