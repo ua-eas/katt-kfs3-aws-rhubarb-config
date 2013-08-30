@@ -38,9 +38,10 @@ outputs:
     attachments:
     - GlobFileFilterTracker: [pdp_sa_check_report*.txt]
   success:
-    subject: ENV - UAF-FORMAT-DLV-CHKSA - (PRD) SUCCESS: KFS-FMT-CHKNMSF - SA check numbers file sent to SA
+    subject: ENV - UAF-FORMAT-DLV-CHKSA - SUCCESS: SA check numbers file sent to SA
     message: >
-      0019Job name: KFS-FMT-CHKNMSF0017Table: SCHEDTAB0024Run date: DATE TIME0027Order date: ODATE TIME0027Number of tries: RUNCOUNT
+      Job name: UAF-FORMAT-DLV-CHKSARPT
+      Run date: DATE TIME
     to:
     - FM_NON_OPERATING_FUNDS_ADDRESS
     cc:

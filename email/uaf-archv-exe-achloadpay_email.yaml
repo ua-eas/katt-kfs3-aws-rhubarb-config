@@ -2,7 +2,7 @@
 name: UAF-ARCHV-EXE-ACHLOADPAY
 outputs:
   start:
-    subject: DEV - UAF-ARCHV-EXE-ACHLOADPAY - Start Notice
+    subject: ENV - UAF-ARCHV-EXE-ACHLOADPAY - Start Notice
     message: >
       The 'UAF-ARCHV-EXE-ACHLOADPAY' process has started.
     to:
@@ -15,7 +15,7 @@ outputs:
     attachments_dir:
     attachments_globs:
   log:
-    subject: DEV - UAF-ARCHV-EXE-ACHLOADPAY - Log Email
+    subject: ENV - UAF-ARCHV-EXE-ACHLOADPAY - Log Email
     message: >
       Please find the attached log(s) for the  'UAF-ARCHV-EXE-ACHLOADPAY' process.
     to:
@@ -28,7 +28,7 @@ outputs:
     attachments_dir:
     attachments_globs:
   report:
-    subject: DEV - UAF-ARCHV-EXE-ACHLOADPAY - Report Email
+    subject: ENV - UAF-ARCHV-EXE-ACHLOADPAY - Report Email
     message: >
       Please find the attached report(s) for the  'UAF-ARCHV-EXE-ACHLOADPAY' process.
     to:

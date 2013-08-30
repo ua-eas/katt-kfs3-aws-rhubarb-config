@@ -2,41 +2,29 @@
 name: UAF-ARCHV-EXE-CUSTINV
 outputs:
   start:
-    subject: DEV - UAF-ARCHV-EXE-CUSTINV - Start Notice
+    subject: ENV - UAF-ARCHV-EXE-CUSTINV - Start Notice
     message: >
       The 'UAF-ARCHV-EXE-CUSTINV' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
-    - JULIE_WINGATE_ADDRESS
-    - HEATHER_LO_ADDRESS
-    - JOSH_SHALOO_ADDRESS
-    - SCOTT_SKINNER_ADDRESS
     cc:
     attachment_dirs:
     attachments:
   log:
-    subject: DEV - UAF-ARCHV-EXE-CUSTINV - Log Email
+    subject: ENV - UAF-ARCHV-EXE-CUSTINV - Log Email
     message: >
       Please find the attached log(s) for the  'UAF-ARCHV-EXE-CUSTINV' process.
     to:
     - KATT_AUTOMATION_ADDRESS
-    - JULIE_WINGATE_ADDRESS
-    - HEATHER_LO_ADDRESS
-    - JOSH_SHALOO_ADDRESS
-    - SCOTT_SKINNER_ADDRESS
     cc:
     attachment_dirs:
     attachments:
   report:
-    subject: DEV - UAF-ARCHV-EXE-CUSTINV - Report Email
+    subject: ENV - UAF-ARCHV-EXE-CUSTINV - Report Email
     message: >
       Please find the attached report(s) for the  'UAF-ARCHV-EXE-CUSTINV' process.
     to:
     - KATT_AUTOMATION_ADDRESS
-    - JULIE_WINGATE_ADDRESS
-    - HEATHER_LO_ADDRESS
-    - JOSH_SHALOO_ADDRESS
-    - SCOTT_SKINNER_ADDRESS
     cc:
     attachment_dirs:
     attachments:

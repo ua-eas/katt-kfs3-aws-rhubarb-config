@@ -31,7 +31,7 @@ outputs:
     attachment_dirs:
     attachments:
   success:
-    subject: ENV - UAF-ARCHV-EXE-CHKRECON - (PRD) BATCH STATUS: Bank Transaction processing segment has finished
+    subject: ENV - UAF-ARCHV-EXE-CHKRECON - BATCH STATUS: Bank Transaction processing segment has finished
     message: >
       As of DATE at TIME, in ENV, the Bank Transaction processing segment has finished.
       The receipt of this email does mean that archiving of Check Recon files has completed.

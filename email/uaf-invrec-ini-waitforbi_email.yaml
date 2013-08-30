@@ -2,41 +2,29 @@
 name: UAF-INVREC-INI-WAITFORBI
 outputs:
   start:
-    subject: DEV - UAF-INVREC-INI-WAITFORBI - Start Notice
+    subject: ENV - UAF-INVREC-INI-WAITFORBI - Start Notice
     message: >
       The 'UAF-INVREC-INI-WAITFORBI' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
-    - JULIE_WINGATE_ADDRESS
-    - HEATHER_LO_ADDRESS
-    - JOSH_SHALOO_ADDRESS
-    - SCOTT_SKINNER_ADDRESS
     cc:
     attachment_dirs:
     attachments:
   log:
-    subject: DEV - UAF-INVREC-INI-WAITFORBI - Log Email
+    subject: ENV - UAF-INVREC-INI-WAITFORBI - Log Email
     message: >
       Please find the attached log(s) for the  'UAF-INVREC-INI-WAITFORBI' process.
     to:
     - KATT_AUTOMATION_ADDRESS
-    - JULIE_WINGATE_ADDRESS
-    - HEATHER_LO_ADDRESS
-    - JOSH_SHALOO_ADDRESS
-    - SCOTT_SKINNER_ADDRESS
     cc:
     attachment_dirs:
     attachments:
   report:
-    subject: DEV - UAF-INVREC-INI-WAITFORBI - Report Email
+    subject: ENV - UAF-INVREC-INI-WAITFORBI - Report Email
     message: >
       Please find the attached report(s) for the  'UAF-INVREC-INI-WAITFORBI' process.
     to:
     - KATT_AUTOMATION_ADDRESS
-    - JULIE_WINGATE_ADDRESS
-    - HEATHER_LO_ADDRESS
-    - JOSH_SHALOO_ADDRESS
-    - SCOTT_SKINNER_ADDRESS
     cc:
     attachment_dirs:
     attachments:
