@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - GlobFileFilter: [kfs-bnk-baiif.log]
+    - GlobFileFilter: [uaf-bank-asm-bai-local.log]
   success:
     subject: ENV - UAF-BANK-ASM-BAI-LOCAL - Bank Transaction processing segment has begun
     message: >
@@ -36,4 +36,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - GlobFileFilter: [kfs-bnk-baiif.log]
+    - GlobFileFilter: [uaf-bank-asm-bai-local.log]
