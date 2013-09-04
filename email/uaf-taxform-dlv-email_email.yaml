@@ -8,8 +8,8 @@ outputs:
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
     subject: ENV - UAF-TAXFORM-DLV-EMAIL - Logs Email
     message: >
@@ -17,9 +17,9 @@ outputs:
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
+    attachment_dirs:
     - BATCH_HOME/logs
-    attachments_globs:
+    attachments:
     - GlobFileFilter: [uaf-taxform-dlv-email.log]
   success:
     subject: ENV - UAF-TAXFORM-DLV-EMAIL - Success Email
@@ -28,5 +28,5 @@ outputs:
     to:
     - FSO_1099_TEAM_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:

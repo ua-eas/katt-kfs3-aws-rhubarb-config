@@ -7,36 +7,28 @@ outputs:
       The 'UAF-ARCHV-EXE-ACHLOADPAY' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
-    - JULIE_WINGATE_ADDRESS
-    - HEATHER_LO_ADDRESS
-    - JOSH_SHALOO_ADDRESS
-    - SCOTT_SKINNER_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
     subject: ENV - UAF-ARCHV-EXE-ACHLOADPAY - Log Email
     message: >
       Please find the attached log(s) for the  'UAF-ARCHV-EXE-ACHLOADPAY' process.
     to:
     - KATT_AUTOMATION_ADDRESS
-    - JULIE_WINGATE_ADDRESS
-    - HEATHER_LO_ADDRESS
-    - JOSH_SHALOO_ADDRESS
-    - SCOTT_SKINNER_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [uaf-archv-exe-achloadpay.log]
   report:
     subject: ENV - UAF-ARCHV-EXE-ACHLOADPAY - Report Email
     message: >
       Please find the attached report(s) for the  'UAF-ARCHV-EXE-ACHLOADPAY' process.
     to:
     - KATT_AUTOMATION_ADDRESS
-    - JULIE_WINGATE_ADDRESS
-    - HEATHER_LO_ADDRESS
-    - JOSH_SHALOO_ADDRESS
-    - SCOTT_SKINNER_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [uaf-archv-exe-achloadpay.log]

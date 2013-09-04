@@ -8,8 +8,8 @@ outputs:
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
-    attachments_globs:
+    attachment_dirs:
+    attachments:
   log:
     subject: ENV - EMCHECKS - Logs Email
     message: >
@@ -17,9 +17,9 @@ outputs:
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
+    attachment_dirs:
     - BATCH_HOME/logs
-    attachments_globs:
+    attachments:
     - GlobFileFilter: [emchecks.log]
   success:
     subject: ENV - EMCHECKS - Success Email
@@ -28,7 +28,7 @@ outputs:
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
-    attachments_dir:
+    attachment_dirs:
     - BATCH_HOME/logs
-    attachments_globs:
+    attachments:
     - GlobFileFilter: [emchecks.log]
