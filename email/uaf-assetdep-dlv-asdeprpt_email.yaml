@@ -20,7 +20,7 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - BATCH_HOME/logs/uaf-assetdep-dlv-asdeprpt.log
+    - GlobFileFilter: [uaf-assetdep-dlv-asdeprpt.log]
   report:
     subject: ENV - UAF-ASSETDEP-DLV-ASDEPRPT - Depreciation reports
     message: >
