@@ -38,7 +38,7 @@ outputs:
     attachments:
     - GlobFileFilterTracker: [pdp_sa_check_report*.txt]
   success:
-    subject: ENV - UAF-FORMAT-DLV-CHKSA - SUCCESS: SA check numbers file sent to SA
+    subject: "ENV - UAF-FORMAT-DLV-CHKSA - SUCCESS: SA check numbers file sent to SA"
     message: >
       Job name: UAF-FORMAT-DLV-CHKSARPT
       Run date: DATE TIME

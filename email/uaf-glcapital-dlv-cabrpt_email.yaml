@@ -28,7 +28,7 @@ outputs:
       processing that occurred during the nightly batch schedule for any asset
       related data.
     to:
-    KFS_CAPITAL_ASSETS_ADDRESS
+    - KFS_CAPITAL_ASSETS_ADDRESS
     cc:
     attachment_dirs:
     - BATCH_HOME/reports/cab

@@ -47,7 +47,7 @@ outputs:
                               posterJob_*.txt,
                               balancing_*.txt]
   success:
-    subject: ENV - UAF-GLPRJE-DLV-GLRPTS - BATCH STATUS: Month End processing segment has finished
+    subject: "ENV - UAF-GLPRJE-DLV-GLRPTS - BATCH STATUS: Month End processing segment has finished"
     message: >
       DATE TIME - Month End processing has completed. The receipt of
       this email does mean that the Month PRJE reports were mailed out (assuming attachments

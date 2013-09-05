@@ -18,7 +18,7 @@ outputs:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
-    BATCH_HOME/logs
+    - BATCH_HOME/logs
     attachments:
     - GlobFileFilter: [uaf-emchecks-dlv-achrpts.log]
   report:

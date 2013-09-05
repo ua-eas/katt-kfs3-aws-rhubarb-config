@@ -32,4 +32,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/reports/fp
     attachments:
-    - GlobFileFilterTracker: [*Tfile_error.report]
+    - GlobFileFilterTracker: ["*Tfile_error.report"]

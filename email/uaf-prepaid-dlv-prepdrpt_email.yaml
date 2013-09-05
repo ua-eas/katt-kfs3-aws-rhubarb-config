@@ -33,4 +33,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/reports/pdp/prepaidChecks
     attachments:
-    - GlobFileFilterTracker: [*.xml.report]
+    - GlobFileFilterTracker: ["*.xml.report"]
