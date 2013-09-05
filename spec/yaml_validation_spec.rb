@@ -16,8 +16,7 @@ describe YamlValidator do
           YamlValidator.validate(yaml_file_path)
         rescue Exception => e
           puts "ERROR: Could not load '#{yaml_file_path}'"
-          puts e.message  
-          return 1
+          throw e
         end
       end
 
