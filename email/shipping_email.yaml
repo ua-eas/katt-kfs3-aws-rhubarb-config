@@ -1,0 +1,34 @@
+---
+name: SHIPPING
+outputs:
+  start:
+    subject: ENV - SHIPPING - Job Stream Start Notice
+    message: >
+      DATE TIME - The 'SHIPPING' job stream has started.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    attachments:
+  log:
+    subject: ENV - SHIPPING - Logs Email
+    message: >
+      DATE TIME - Please find the attached log(s) for the  'SHIPPING' job stream.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [shipping.log]
+  success:
+    subject: ENV - SHIPPING - Success Email
+    message: >
+      DATE TIME - The 'SHIPPING' job stream has completed successfully, please find the attached log.'
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [shipping.log]
