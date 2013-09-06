@@ -32,3 +32,17 @@ outputs:
     - BATCH_HOME/logs
     attachments:
     - GlobFileFilter: [shipping.log]
+  dlv_remitlist_file:
+    subject: ENV - UAF-SHIP-DLV-REMITLIST - Fedex Remittance File
+    message: >
+      TODO - Sort out attachments for this target!
+
+      DATE TIME - Attached is a copy of a Fedex remittance that is being sent
+      electronically to Fedex.
+    to: 
+    - FEDEX_ADMIN_ADDRESS
+    cc: 
+    - CHECK_CONTROL_ADDRESS
+    - KFS_BSA_ADDRESS
+    attachment_dirs:
+    attachments: 
