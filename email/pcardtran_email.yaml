@@ -32,3 +32,18 @@ outputs:
     - BATCH_HOME/logs
     attachments:
     - GlobFileFilter: [pcardtran.log]
+  dlv_autorpt_report:
+    subject: ENV - UAF-PCARDT-DLV-AUTORPT - PCard Validation Errors, PACS/AP Team Review
+    message: >
+      DATE TIME - Attached is/are the report(s) that show the results and/or
+      provide information on any error conditions found, if any, as a result of PCDO
+      validation errors thrown during the PCDO auto approve process.
+    to: 
+    - KFS_BSA_ADDRESS
+    cc: 
+    - KFS_PCARD_ERROR_ADDRESS
+    attachment_dirs:
+    - BATCH_HOME/reports/fp
+    attachments:
+    - GlobFileFilterTracker: [pcdo_reroute_errors_*.txt]
+
