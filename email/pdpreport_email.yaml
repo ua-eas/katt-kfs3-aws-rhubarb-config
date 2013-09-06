@@ -1,0 +1,65 @@
+---
+name: PDPREPORT
+outputs:
+  start:
+    subject: ENV - PDPREPORT - Job Stream Start Notice
+    message: >
+      DATE TIME - The 'PDPREPORT' job stream has started.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    attachments:
+  log:
+    subject: ENV - PDPREPORT - Logs Email
+    message: >
+      DATE TIME - Please find the attached log(s) for the  'PDPREPORT' job stream.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [pdpreport.log]
+  success:
+    subject: ENV - PDPREPORT - Success Email
+    message: >
+      DATE TIME - The 'PDPREPORT' job stream has completed successfully, please find the attached log.'
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [pdpreport.log]
+  dlv_dailyrpt_report:
+    subject: ENV - UAF-PDPRPT-DLV-DAILYRPT - PDP/AP/CRT Team Review
+    message: >
+      DATE TIME - Attached is/are the report(s) that reflect the summary
+      breakdown by type and source of payments that are ELIGIBLE to be formatted via 
+      the online process based on the date(s) shown on the corresponding report(s).
+      This will not necessarily reflect all of the payment data that is sitting
+      within the PDP area of the system awaiting a payment date to be achieved.
+    
+      The report(s) may also not reflect or tie to an actual check file that is
+      ultimately produced for a particular day due to changes that can occur within
+      the PDP area of the system, such as moving a payment to 'immediate' or placing
+      a payment on hold, prior to performing the actual format process that would
+      affect the payments that actually are made.
+    to: 
+    - FEDEX_ADMIN_ADDRESS
+    cc: 
+    attachment_dirs:
+    - BATCH_HOME/reports/pdp
+    attachments:
+    - GlobFileFilterTracker: [pdp_daily_*.pdf]
+  dlv_dailyrpt_success:
+    subject: ENV - UAF-PDPRPT-DLV-DAILYRPT - SUCCESS 
+    message: >
+      Job name: UAF-PDPRPT-DLV-DAILYRPT
+      Run date: DATE TIME
+    to: 
+    - KATT_AUTOMATION_ADDRESS
+    cc: 
+    attachment_dirs:
+    attachments:
