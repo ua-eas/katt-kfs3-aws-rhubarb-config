@@ -2,8 +2,8 @@
 name: EFFCEREXT
 outputs:
   start:
-    subject: ENV - EFFCEREXT - Job Stream Start Notice
-    message: >
+    subject: (ENV) - EFFCEREXT - Job Stream Start Notice
+    message: |+
       DATE TIME - The 'EFFCEREXT' job stream has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - EFFCEREXT - Logs Email
-    message: >
+    subject: (ENV) - EFFCEREXT - Logs Email
+    message: |+
       DATE TIME - Please find the attached log(s) for the  'EFFCEREXT' job stream.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [effcerext.log]
   success:
-    subject: ENV - EFFCEREXT - Success Email
-    message: >
+    subject: (ENV) - EFFCEREXT - Success Email
+    message: |+
       DATE TIME - The 'EFFCEREXT' job stream has completed successfully, please find the attached log.'
     to:
     - KATT_AUTOMATION_ADDRESS

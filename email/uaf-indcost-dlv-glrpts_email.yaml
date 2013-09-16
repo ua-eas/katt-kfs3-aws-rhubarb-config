@@ -2,8 +2,8 @@
 name: UAF-INDCOST-DLV-GLRPTS
 outputs:
   start:
-    subject: ENV - UAF-INDCOST-DLV-GLRPTS - Start Notice
-    message: >
+    subject: (ENV) - UAF-INDCOST-DLV-GLRPTS - Start Notice
+    message: |+
       The 'UAF-INDCOST-DLV-GLRPTS' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-INDCOST-DLV-GLRPTS - Log Email
-    message: >
+    subject: (ENV) - UAF-INDCOST-DLV-GLRPTS - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-INDCOST-DLV-GLRPTS' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-indcost-dlv-glrpts.log]
   report:
-    subject: ENV - UAF-INDCOST-DLV-GLRPTS - Indirect Cost Recovery Processing Report(s), FP Team Review
-    message: >
+    subject: (ENV) - UAF-INDCOST-DLV-GLRPTS - Indirect Cost Recovery Processing Report(s), FP Team Review
+    message: |+
       DATE TIME - Attached are the reports that provide the results associated
       with the batch processing for the Indirect Cost Recovery Encumbrances. These
       reports will provide information with regard to statistics and errors found, if

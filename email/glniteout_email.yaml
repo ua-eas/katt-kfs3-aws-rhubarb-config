@@ -2,8 +2,8 @@
 name: GLNITEOUT
 outputs:
   start:
-    subject: ENV - GLNITEOUT - Job Stream Start Notice
-    message: >
+    subject: (ENV) - GLNITEOUT - Job Stream Start Notice
+    message: |+
       DATE TIME - The 'GLNITEOUT' job stream has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - GLNITEOUT - Logs Email
-    message: >
+    subject: (ENV) - GLNITEOUT - Logs Email
+    message: |+
       DATE TIME - Please find the attached log(s) for the  'GLNITEOUT' job stream.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [glniteout.log]
   success:
-    subject: ENV - GLNITEOUT - Success Email
-    message: >
+    subject: (ENV) - GLNITEOUT - Success Email
+    message: |+
       DATE TIME - The 'GLNITEOUT' job stream has completed successfully, please find the attached log.'
     to:
     - KATT_AUTOMATION_ADDRESS

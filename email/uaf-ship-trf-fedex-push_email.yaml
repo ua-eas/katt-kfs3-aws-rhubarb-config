@@ -2,8 +2,8 @@
 name: UAF-SHIP-TRF-FEDEX-PUSH
 outputs:
   start:
-    subject: ENV - UAF-SHIP-TRF-FEDEX-PUSH - Start Notice
-    message: >
+    subject: (ENV) - UAF-SHIP-TRF-FEDEX-PUSH - Start Notice
+    message: |+
       DATE TIME - The 'UAF-SHIP-TRF-FEDEX-PUSH' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-SHIP-TRF-FEDEX-PUSH - Logs Email
-    message: >
+    subject: (ENV) - UAF-SHIP-TRF-FEDEX-PUSH - Logs Email
+    message: |+
       Please find the attached log(s) for the  'UAF-SHIP-TRF-FEDEX-PUSH' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-ship-trf-fedex-push.log]
   success:
-    subject: ENV - UAF-SHIP-TRF-FEDEX-PUSH - SUCCESS, Invoice file(s) received from Fedex
-    message: >
+    subject: (ENV) - UAF-SHIP-TRF-FEDEX-PUSH - SUCCESS, Invoice file(s) received from Fedex
+    message: |+
       Job name: UAF-SHIP-TRF-FEDEX-PUSH
       Run date: DATE TIME
     to:

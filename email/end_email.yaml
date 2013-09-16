@@ -2,8 +2,8 @@
 name: END
 outputs:
   start:
-    subject: ENV - END - Job Stream Start Notice
-    message: >
+    subject: (ENV) - END - Job Stream Start Notice
+    message: |+
       DATE TIME - The 'END' job stream has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - END - Logs Email
-    message: >
+    subject: (ENV) - END - Logs Email
+    message: |+
       DATE TIME - Please find the attached log(s) for the  'END' job stream.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [end.log]
   success:
-    subject: ENV - END - Success Email
-    message: >
+    subject: (ENV) - END - Success Email
+    message: |+
       DATE TIME - The 'END' job stream has completed successfully, please find the attached log.'
     to:
     - KATT_AUTOMATION_ADDRESS

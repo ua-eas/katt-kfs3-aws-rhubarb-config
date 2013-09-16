@@ -2,8 +2,8 @@
 name: UAF-PDP-DLV-PDPLEDRPT
 outputs:
   start:
-    subject: ENV - UAF-PDP-DLV-PDPLEDRPT - Start Notice
-    message: >
+    subject: (ENV) - UAF-PDP-DLV-PDPLEDRPT - Start Notice
+    message: |+
       The 'UAF-PDP-DLV-PDPLEDRPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-PDP-DLV-PDPLEDRPT - Log Email
-    message: >
+    subject: (ENV) - UAF-PDP-DLV-PDPLEDRPT - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-PDP-DLV-PDPLEDRPT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-pdp-dlv-pdpledrpt.log]
   report:
-    subject: ENV - UAF-PDP-DLV-PDPLEDRPT - General Ledger Report(s) from PDP, FP/PDP/AP Review Teams
-    message: >
+    subject: (ENV) - UAF-PDP-DLV-PDPLEDRPT - General Ledger Report(s) from PDP, FP/PDP/AP Review Teams
+    message: |+
       DATE TIME - Attached is/are the report(s) that show the general ledger
       transaction data that was produced from the payment processing within the PDP.
       This data will be further processed with the remainder of the generated ledger

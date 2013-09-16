@@ -2,8 +2,8 @@
 name: UAF-GLPRJE-DLV-GLRPTS
 outputs:
   start:
-    subject: ENV - UAF-GLPRJE-DLV-GLRPTS - Start Notice
-    message: >
+    subject: (ENV) - UAF-GLPRJE-DLV-GLRPTS - Start Notice
+    message: |+
       The 'UAF-GLPRJE-DLV-GLRPTS' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-GLPRJE-DLV-GLRPTS - Logs Email
-    message: >
+    subject: (ENV) - UAF-GLPRJE-DLV-GLRPTS - Logs Email
+    message: |+
       Please find the attached log(s) for the  'UAF-GLPRJE-DLV-GLRPTS' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-glprje-dlv-glrpts.log]
   report:
-    subject: ENV - UAF-GLPRJE-DLV-GLRPTS - General Ledger PRJE Processing Report(s), FP Team Review
-    message: >
+    subject: (ENV) - UAF-GLPRJE-DLV-GLRPTS - General Ledger PRJE Processing Report(s), FP Team Review
+    message: |+
       DATE TIME
       Attached are reports results associated with monthly PRJE batch process.
       
@@ -48,7 +48,7 @@ outputs:
                               balancing_*.txt]
   success:
     subject: "ENV - UAF-GLPRJE-DLV-GLRPTS - BATCH STATUS: Month End processing segment has finished"
-    message: >
+    message: |+
       DATE TIME - Month End processing has completed. The receipt of
       this email does mean that the Month PRJE reports were mailed out (assuming attachments
       were found). However, it does not mean that all previous jobs in the chain succeeded

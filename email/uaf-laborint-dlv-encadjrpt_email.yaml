@@ -2,8 +2,8 @@
 name: UAF-LABORINT-DLV-ENCADJRPT
 outputs:
   start:
-    subject: ENV - UAF-LABORINT-DLV-ENCADJRPT - Start Notice
-    message: >
+    subject: (ENV) - UAF-LABORINT-DLV-ENCADJRPT - Start Notice
+    message: |+
       The 'UAF-LABORINT-DLV-ENCADJRPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-LABORINT-DLV-ENCADJRPT - Log Email
-    message: >
+    subject: (ENV) - UAF-LABORINT-DLV-ENCADJRPT - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-LABORINT-DLV-ENCADJRPT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-laborint-dlv-encadjrpt.log]
   report:
-    subject: ENV - UAF-LABORINT-DLV-ENCADJRPT - Salary Encumbrance Adjustments Report, FP Team Review
-    message: >
+    subject: (ENV) - UAF-LABORINT-DLV-ENCADJRPT - Salary Encumbrance Adjustments Report, FP Team Review
+    message: |+
       DATE TIME - Attached is the report that shows the results and/or error
       conditions that have resulted from processing the UAccess Employee salary
       encumbrance interface file. The salary encumbrance adjustment results were

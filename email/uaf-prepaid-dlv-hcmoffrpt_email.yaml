@@ -2,8 +2,8 @@
 name: UAF-PREPAID-DLV-HCMOFFRPT
 outputs:
   start:
-    subject: ENV - UAF-PREPAID-DLV-HCMOFFRPT - Start Notice
-    message: >
+    subject: (ENV) - UAF-PREPAID-DLV-HCMOFFRPT - Start Notice
+    message: |+
       The 'UAF-PREPAID-DLV-HCMOFFRPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-PREPAID-DLV-HCMOFFRPT - Log Email
-    message: >
+    subject: (ENV) - UAF-PREPAID-DLV-HCMOFFRPT - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-PREPAID-DLV-HCMOFFRPT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-prepaid-dlv-hcmoffrpt.log]
   report:
-    subject: ENV - UAF-PREPAID-DLV-HCMOFFRPT - HCM off-cycle checks, PDP/APTeam Review
-    message: >
+    subject: (ENV) - UAF-PREPAID-DLV-HCMOFFRPT - HCM off-cycle checks, PDP/APTeam Review
+    message: |+
       DATE TIME - Attached is/are the report(s) that show the results and/or
       provide information on any error conditions found, if any, as a result of any
       eInvoice files that were processed for the day.

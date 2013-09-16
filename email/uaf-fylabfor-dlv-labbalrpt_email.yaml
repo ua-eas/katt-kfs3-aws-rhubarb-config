@@ -2,8 +2,8 @@
 name: UAF-FYLABFOR-DLV-LABBALRPT
 outputs:
   start:
-    subject: ENV - UAF-FYLABFOR-DLV-LABBALRPT - Start Notice
-    message: >
+    subject: (ENV) - UAF-FYLABFOR-DLV-LABBALRPT - Start Notice
+    message: |+
       The 'UAF-FYLABFOR-DLV-LABBALRPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-FYLABFOR-DLV-LABBALRPT - Log Email
-    message: >
+    subject: (ENV) - UAF-FYLABFOR-DLV-LABBALRPT - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-FYLABFOR-DLV-LABBALRPT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-fylabfor-dlv-labbalrpt.log]
   report:
-    subject: ENV - UAF-FYLABFOR-DLV-LABBALRPT - LLCP and Labor scrubber on hold pending completion of this process
-    message: >
+    subject: (ENV) - UAF-FYLABFOR-DLV-LABBALRPT - LLCP and Labor scrubber on hold pending completion of this process
+    message: |+
       DATE TIME - A data file has been produced from the execution of the
       laborbalanceforward process. This file can be reviewed within the LLCP or by
       downloading the file from the batch file link. The remaining jobs are on hold

@@ -2,8 +2,8 @@
 name: UAF-FORMAT-DLV-RECONRPT
 outputs:
   start:
-    subject: ENV - UAF-FORMAT-DLV-RECONRPT - Start Notice
-    message: >
+    subject: (ENV) - UAF-FORMAT-DLV-RECONRPT - Start Notice
+    message: |+
       The 'UAF-FORMAT-DLV-RECONRPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-FORMAT-DLV-RECONRPT - Log Email
-    message: >
+    subject: (ENV) - UAF-FORMAT-DLV-RECONRPT - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-FORMAT-DLV-RECONRPT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-format-dlv-reconrpt.log]
   report:
-    subject: ENV - UAF-FORMAT-DLV-RECONRPT - Check Reconciliation Error Report - PDP Team Review
-    message: >
+    subject: (ENV) - UAF-FORMAT-DLV-RECONRPT - Check Reconciliation Error Report - PDP Team Review
+    message: |+
       Attached is the report that provides the results and/or provides information on
       any error conditions found, if any, as a result of the check reconciliation
       processing that followed the check creation process.

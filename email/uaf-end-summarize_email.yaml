@@ -2,8 +2,8 @@
 name: UAF-END-SUMMARIZE
 outputs:
   start:
-    subject: ENV - UAF-END-SUMMARIZE - Start Notice
-    message: >
+    subject: (ENV) - UAF-END-SUMMARIZE - Start Notice
+    message: |+
       DATE TIME - The 'UAF-END-SUMMARIZE' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-END-SUMMARIZE - Logs Email
-    message: >
+    subject: (ENV) - UAF-END-SUMMARIZE - Logs Email
+    message: |+
       Please find the attached log(s) for the  'UAF-END-SUMMARIZE' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [kfs-ind-nbisgds.log]
   success:
-    subject: ENV - UAF-END-SUMMARIZE - SUCCESS, Weekday financial processing has completed
-    message: >
+    subject: (ENV) - UAF-END-SUMMARIZE - SUCCESS, Weekday financial processing has completed
+    message: |+
       DATE TIME - The financial processing portion of the ENV nightly batch
       for today, DATE, has completed at TIME.
       

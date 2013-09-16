@@ -2,8 +2,8 @@
 name: EINVOICE
 outputs:
   start:
-    subject: ENV - EINVOICE - Job Stream Start Notice
-    message: >
+    subject: (ENV) - EINVOICE - Job Stream Start Notice
+    message: |+
       DATE TIME - The 'EINVOICE' job stream has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - EINVOICE - Logs Email
-    message: >
+    subject: (ENV) - EINVOICE - Logs Email
+    message: |+
       DATE TIME - Please find the attached log(s) for the  'EINVOICE' job stream.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [einvoice.log]
   success:
-    subject: ENV - EINVOICE - Success Email
-    message: >
+    subject: (ENV) - EINVOICE - Success Email
+    message: |+
       DATE TIME - The 'EINVOICE' job stream has completed successfully, please find the attached log.'
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -33,8 +33,8 @@ outputs:
     attachments:
     - GlobFileFilter: [einvoice.log]
   start:
-    subject: ENV - UAF-EINV-DLV-EINVEXTR - Start Notice
-    message: >
+    subject: (ENV) - UAF-EINV-DLV-EINVEXTR - Start Notice
+    message: |+
       The 'UAF-EINV-DLV-EINVEXTR' process has started.
     to: 
     - KATT_AUTOMATION_ADDRESS
@@ -42,8 +42,8 @@ outputs:
     attachment_dirs:
     attachments:
   dlv_einvextr_report:
-    subject: ENV - UAF-EINV-DLV-EINVEXTR - eInvoice Processing Information - PACS/AP Team Review
-    message: >
+    subject: (ENV) - UAF-EINV-DLV-EINVEXTR - eInvoice Processing Information - PACS/AP Team Review
+    message: |+
       DATE TIME - Attached is/are the report(s) that show the results and/or
       provide information on any error conditions found, if any, as a result of any 
       eInvoice files that were processed for the day.

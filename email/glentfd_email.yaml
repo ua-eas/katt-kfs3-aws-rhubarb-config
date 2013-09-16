@@ -2,8 +2,8 @@
 name: GLENTFD
 outputs:
   start:
-    subject: ENV - GLENTFD - Job Stream Start Notice
-    message: >
+    subject: (ENV) - GLENTFD - Job Stream Start Notice
+    message: |+
       DATE TIME - The 'GLENTFD' job stream has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - GLENTFD - Logs Email
-    message: >
+    subject: (ENV) - GLENTFD - Logs Email
+    message: |+
       DATE TIME - Please find the attached log(s) for the  'GLENTFD' job stream.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [glentfd.log]
   success:
-    subject: ENV - GLENTFD - Success Email
-    message: >
+    subject: (ENV) - GLENTFD - Success Email
+    message: |+
       DATE TIME - The 'GLENTFD' job stream has completed successfully, please find the attached log.'
     to:
     - KATT_AUTOMATION_ADDRESS

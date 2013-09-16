@@ -2,8 +2,8 @@
 name: UAF-LABORMNT-DLV-ERESWRPTS
 outputs:
   start:
-    subject: ENV - UAF-LABORMNT-DLV-ERESWRPTS - Start Notice
-    message: >
+    subject: (ENV) - UAF-LABORMNT-DLV-ERESWRPTS - Start Notice
+    message: |+
       The 'UAF-LABORMNT-DLV-ERESWRPTS' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-LABORMNT-DLV-ERESWRPTS - Log Email
-    message: >
+    subject: (ENV) - UAF-LABORMNT-DLV-ERESWRPTS - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-LABORMNT-DLV-ERESWRPTS' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-labormnt-dlv-ereswrpts.log]
   report:
-    subject: ENV - UAF-LABORMNT-DLV-ERESWRPTS - Labor Processing Report(s) AFTER Fringe Budget Sweep, FP Team Review
-    message: >
+    subject: (ENV) - UAF-LABORMNT-DLV-ERESWRPTS - Labor Processing Report(s) AFTER Fringe Budget Sweep, FP Team Review
+    message: |+
       DATE TIME - Attached are the additional reports that provide the results
       associated with the batch processing for the labor ledger after the execution
       of the ERE Budget sweep job. These reports will provide information on the

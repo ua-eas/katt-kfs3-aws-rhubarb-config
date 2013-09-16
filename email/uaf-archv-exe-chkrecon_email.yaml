@@ -2,8 +2,8 @@
 name: UAF-ARCHV-EXE-CHKRECON
 outputs:
   start:
-    subject: ENV - UAF-ARCHV-EXE-CHKRECON - Start Notice
-    message: >
+    subject: (ENV) - UAF-ARCHV-EXE-CHKRECON - Start Notice
+    message: |+
       The 'UAF-ARCHV-EXE-CHKRECON' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-ARCHV-EXE-CHKRECON - Logs Email
-    message: >
+    subject: (ENV) - UAF-ARCHV-EXE-CHKRECON - Logs Email
+    message: |+
       Please find the attached log(s) for the  'UAF-ARCHV-EXE-CHKRECON' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [kfs-bnk-ckrecna.log]
   report:
-    subject: ENV - UAF-ARCHV-EXE-CHKRECON - Report Email
-    message: >
+    subject: (ENV) - UAF-ARCHV-EXE-CHKRECON - Report Email
+    message: |+
       Please find the attached report(s) for the  'UAF-ARCHV-EXE-CHKRECON' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -32,7 +32,7 @@ outputs:
     attachments:
   success:
     subject: "ENV - UAF-ARCHV-EXE-CHKRECON - BATCH STATUS: Bank Transaction processing segment has finished"
-    message: >
+    message: |+
       As of DATE at TIME, in ENV, the Bank Transaction processing segment has finished.
       The receipt of this email does mean that archiving of Check Recon files has completed.
       However, it does not mean that all previous jobs in the chain succeeded (owing to the

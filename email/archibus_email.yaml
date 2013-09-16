@@ -2,8 +2,8 @@
 name: ARCHIBUS
 outputs:
   start:
-    subject: ENV - ARCHIBUS - Job Stream Start Notice
-    message: >
+    subject: (ENV) - ARCHIBUS - Job Stream Start Notice
+    message: |+
       DATE TIME - The 'ARCHIBUS' job stream has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - ARCHIBUS - Logs Email
-    message: >
+    subject: (ENV) - ARCHIBUS - Logs Email
+    message: |+
       DATE TIME - Please find the attached log(s) for the  'ARCHIBUS' job stream.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [archibus.log]
   success:
-    subject: ENV - ARCHIBUS - Success Email
-    message: >
+    subject: (ENV) - ARCHIBUS - Success Email
+    message: |+
       DATE TIME - The 'ARCHIBUS' job stream has completed successfully, please find the attached log.'
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -33,8 +33,8 @@ outputs:
     attachments:
     - GlobFileFilter: [archibus.log]
   dlv_loadrpt_report:
-    subject: ENV - UAF-ARCHB-DLV-LOADRPT - Archibus Processing Information - Capital Assets Team Review
-    message: >
+    subject: (ENV) - UAF-ARCHB-DLV-LOADRPT - Archibus Processing Information - Capital Assets Team Review
+    message: |+
       DATE TIME - Attached are the reports that show the results and provide
       information on building/room records successfully updated and any error
       conditions found, if any, as a result of any Archibus files that were processed

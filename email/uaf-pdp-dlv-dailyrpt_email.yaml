@@ -2,8 +2,8 @@
 name: UAF-PDP-DLV-DAILYRPT
 outputs:
   start:
-    subject: ENV - UAF-PDP-DLV-DAILYRPT - Start Notice
-    message: >
+    subject: (ENV) - UAF-PDP-DLV-DAILYRPT - Start Notice
+    message: |+
       The 'UAF-PDP-DLV-DAILYRPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-PDP-DLV-DAILYRPT - Log Email
-    message: >
+    subject: (ENV) - UAF-PDP-DLV-DAILYRPT - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-PDP-DLV-DAILYRPT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-pdp-dlv-dailyrpt.log]
   report:
-    subject: ENV - UAF-PDP-DLV-DAILYRPT - PDP Daily Report(s), AP/PDP Team Review
-    message: >
+    subject: (ENV) - UAF-PDP-DLV-DAILYRPT - PDP Daily Report(s), AP/PDP Team Review
+    message: |+
       DATE TIME - Attached is/are the report(s) that reflect the summary
       breakdown by type and source of payments that are ELIGIBLE to be formatted via
       the online process based on the date(s) shown on the corresponding report(s).

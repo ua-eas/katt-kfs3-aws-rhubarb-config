@@ -2,8 +2,8 @@
 name: UAF-FORMAT-DLV-ACHWF
 outputs:
   start:
-    subject: ENV - UAF-FORMAT-DLV-ACHWF - Start Notice
-    message: >
+    subject: (ENV) - UAF-FORMAT-DLV-ACHWF - Start Notice
+    message: |+
       DATE TIME - The 'UAF-FORMAT-DLV-ACHWF' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-FORMAT-DLV-ACHWF - Logs Email
-    message: >
+    subject: (ENV) - UAF-FORMAT-DLV-ACHWF - Logs Email
+    message: |+
       Please find the attached log(s) for the  'UAF-FORMAT-DLV-ACHWF' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [kfs-fmt-achbf.log]
   success:
-    subject: ENV - UAF-FORMAT-DLV-ACHWF - SUCCESS, ACH file sent to Wells Fargo
-    message: >
+    subject: (ENV) - UAF-FORMAT-DLV-ACHWF - SUCCESS, ACH file sent to Wells Fargo
+    message: |+
       Job name: UAF-FORMAT-DLV-ACHWF
       Run date: DATE TIME
     to:
