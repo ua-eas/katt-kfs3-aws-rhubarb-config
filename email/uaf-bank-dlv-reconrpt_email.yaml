@@ -2,8 +2,8 @@
 name: UAF-BANK-DLV-RECONRPT
 outputs:
   start:
-    subject: ENV - UAF-BANK-DLV-RECONRPT - Start Notice
-    message: >
+    subject: (ENV) - UAF-BANK-DLV-RECONRPT - Start Notice
+    message: |+
       The 'UAF-BANK-DLV-RECONRPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-BANK-DLV-RECONRPT - Log Email
-    message: >
+    subject: (ENV) - UAF-BANK-DLV-RECONRPT - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-BANK-DLV-RECONRPT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     GlobFileFilter: [uaf-bank-dlv-reconrpt.log]
   report:
-    subject: ENV - KFS-BNK-CKRECNE - Check Reconciliation Error Report - PDP Team Review
-    message: >
+    subject: (ENV) - KFS-BNK-CKRECNE - Check Reconciliation Error Report - PDP Team Review
+    message: |+
       DATE TIME - Attached is the report that provides the results and/or
       provides information on any error conditions found, if any, as a result of the
       check reconciliation processing that followed the processing of the bank

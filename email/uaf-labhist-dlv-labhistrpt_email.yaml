@@ -2,8 +2,8 @@
 name: UAF-LABHIST-DLV-LABHISTRPT
 outputs:
   start:
-    subject: ENV - UAF-LABHIST-DLV-LABHISTRPT - Start Notice
-    message: >
+    subject: (ENV) - UAF-LABHIST-DLV-LABHISTRPT - Start Notice
+    message: |+
       The 'UAF-LABHIST-DLV-LABHISTRPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-LABHIST-DLV-LABHISTRPT - Log Email
-    message: >
+    subject: (ENV) - UAF-LABHIST-DLV-LABHISTRPT - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-LABHIST-DLV-LABHISTRPT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-labhist-dlv-labhistrpt.log]
   report:
-    subject: ENV - UAF-LABHIST-DLV-LABHISTRPT - Labor Balancing Reports
-    message: >
+    subject: (ENV) - UAF-LABHIST-DLV-LABHISTRPT - Labor Balancing Reports
+    message: |+
       Please find the attached report(s) for the  'UAF-LABHIST-DLV-LABHISTRPT' process.
     to:
     - FSO_KFS_REPORTS_FIN_MGMT

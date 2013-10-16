@@ -2,8 +2,8 @@
 name: PCARDTRAN
 outputs:
   start:
-    subject: ENV - PCARDTRAN - Job Stream Start Notice
-    message: >
+    subject: (ENV) - PCARDTRAN - Job Stream Start Notice
+    message: |+
       DATE TIME - The 'PCARDTRAN' job stream has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - PCARDTRAN - Logs Email
-    message: >
+    subject: (ENV) - PCARDTRAN - Logs Email
+    message: |+
       DATE TIME - Please find the attached log(s) for the  'PCARDTRAN' job stream.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [pcardtran.log]
   success:
-    subject: ENV - PCARDTRAN - Success Email
-    message: >
+    subject: (ENV) - PCARDTRAN - Success Email
+    message: |+
       DATE TIME - The 'PCARDTRAN' job stream has completed successfully, please find the attached log.'
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -33,8 +33,8 @@ outputs:
     attachments:
     - GlobFileFilter: [pcardtran.log]
   dlv_autorpt_report:
-    subject: ENV - UAF-PCARDT-DLV-AUTORPT - PCard Validation Errors, PACS/AP Team Review
-    message: >
+    subject: (ENV) - UAF-PCARDT-DLV-AUTORPT - PCard Validation Errors, PACS/AP Team Review
+    message: |+
       DATE TIME - Attached is/are the report(s) that show the results and/or
       provide information on any error conditions found, if any, as a result of PCDO
       validation errors thrown during the PCDO auto approve process.

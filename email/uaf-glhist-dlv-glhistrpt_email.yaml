@@ -2,8 +2,8 @@
 name: UAF-GLHIST-DLV-GLHISTRPT
 outputs:
   start:
-    subject: ENV - UAF-GLHIST-DLV-GLHISTRPT - Start Notice
-    message: >
+    subject: (ENV) - UAF-GLHIST-DLV-GLHISTRPT - Start Notice
+    message: |+
       The 'UAF-GLHIST-DLV-GLHISTRPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-GLHIST-DLV-GLHISTRPT - Log Email
-    message: >
+    subject: (ENV) - UAF-GLHIST-DLV-GLHISTRPT - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-GLHIST-DLV-GLHISTRPT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-glhist-dlv-glhistrpt]
   report:
-    subject: ENV - UAF-GLHIST-DLV-GLHISTRPT - Poster Balancing Reports
-    message: >
+    subject: (ENV) - UAF-GLHIST-DLV-GLHISTRPT - Poster Balancing Reports
+    message: |+
       Please find the attached report(s) for the  'UAF-GLHIST-DLV-GLHISTRPT' process.
     to:
     - FSO_KFS_REPORTS_FIN_MGMT

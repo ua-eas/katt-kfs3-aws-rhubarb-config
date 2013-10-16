@@ -2,8 +2,8 @@
 name: ACHLOAD
 outputs:
   start:
-    subject: ENV - ACHLOAD - Job Stream Start Notice
-    message: >
+    subject: (ENV) - ACHLOAD - Job Stream Start Notice
+    message: |+
       DATE TIME - The 'ACHLOAD' job stream has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - ACHLOAD - Logs Email
-    message: >
+    subject: (ENV) - ACHLOAD - Logs Email
+    message: |+
       DATE TIME - Please find the attached log(s) for the  'ACHLOAD' job stream.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [achload.log]
   success:
-    subject: ENV - ACHLOAD - Success Email
-    message: >
+    subject: (ENV) - ACHLOAD - Success Email
+    message: |+
       DATE TIME - The 'ACHLOAD' job stream has completed successfully, please find the attached log.'
     to:
     - KATT_AUTOMATION_ADDRESS

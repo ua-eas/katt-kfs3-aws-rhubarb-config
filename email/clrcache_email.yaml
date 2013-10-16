@@ -2,8 +2,8 @@
 name: CLRCACHE
 outputs:
   start:
-    subject: ENV - CLRCACHE - Job Stream Start Notice
-    message: >
+    subject: (ENV) - CLRCACHE - Job Stream Start Notice
+    message: |+
       DATE TIME - The 'CLRCACHE' job stream has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - CLRCACHE - Logs Email
-    message: >
+    subject: (ENV) - CLRCACHE - Logs Email
+    message: |+
       DATE TIME - Please find the attached log(s) for the  'CLRCACHE' job stream.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [clrcache.log]
   success:
-    subject: ENV - CLRCACHE - Success Email
-    message: >
+    subject: (ENV) - CLRCACHE - Success Email
+    message: |+
       DATE TIME - The 'CLRCACHE' job stream has completed successfully, please find the attached log.'
     to:
     - KATT_AUTOMATION_ADDRESS

@@ -2,8 +2,8 @@
 name: UAF-GLMAINT-DLV-GLRPTS
 outputs:
   start:
-    subject: ENV - UAF-GLMAINT-DLV-GLRPTS - Start Notice
-    message: >
+    subject: (ENV) - UAF-GLMAINT-DLV-GLRPTS - Start Notice
+    message: |+
       The 'UAF-GLMAINT-DLV-GLRPTS' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-GLMAINT-DLV-GLRPTS - Log Email
-    message: >
+    subject: (ENV) - UAF-GLMAINT-DLV-GLRPTS - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-GLMAINT-DLV-GLRPTS' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-glmaint-dlv-glrpts.log]
   report:
-    subject: ENV - UAF-GLMAINT-DLV-GLRPTS - General Ledger Processing Report(s), FP Team Review
-    message: >
+    subject: (ENV) - UAF-GLMAINT-DLV-GLRPTS - General Ledger Processing Report(s), FP Team Review
+    message: |+
       DATE TIME - Attached are the reports that provide the results associated
       with the batch processing for the general ledger. These reports will provide
       information with regard to statistics and errors found, if any, from any of the

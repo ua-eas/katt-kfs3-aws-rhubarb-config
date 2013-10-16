@@ -2,8 +2,8 @@
 name: UAF-FORMAT-DLV-CHKSARPT
 outputs:
   start:
-    subject: ENV - UAF-FORMAT-DLV-CHKSARPT - Start Notice
-    message: >
+    subject: (ENV) - UAF-FORMAT-DLV-CHKSARPT - Start Notice
+    message: |+
       The 'UAF-FORMAT-DLV-CHKSARPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-FORMAT-DLV-CHKSA - Logs Email
-    message: >
+    subject: (ENV) - UAF-FORMAT-DLV-CHKSA - Logs Email
+    message: |+
       Please find the attached log(s) for the  'UAF-FORMAT-DLV-CHKSA' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [kfs-fmt-chknmsf.log]
   report:
-    subject: ENV - UAF-FORMAT-DLV-CHKSARPT - Student Interface Check File
-    message: >
+    subject: (ENV) - UAF-FORMAT-DLV-CHKSARPT - Student Interface Check File
+    message: |+
       DATE TIME - Attached is/are the report(s) that show the results and/or
       provide information on any error conditions found, if any, as a result of any
       Student Interface files that were processed for the day.
@@ -39,7 +39,7 @@ outputs:
     - GlobFileFilterTracker: [pdp_sa_check_report*.txt]
   success:
     subject: "ENV - UAF-FORMAT-DLV-CHKSA - SUCCESS: SA check numbers file sent to SA"
-    message: >
+    message: |+
       Job name: UAF-FORMAT-DLV-CHKSARPT
       Run date: DATE TIME
     to:

@@ -2,8 +2,8 @@
 name: PDPREPORT
 outputs:
   start:
-    subject: ENV - PDPREPORT - Job Stream Start Notice
-    message: >
+    subject: (ENV) - PDPREPORT - Job Stream Start Notice
+    message: |+
       DATE TIME - The 'PDPREPORT' job stream has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - PDPREPORT - Logs Email
-    message: >
+    subject: (ENV) - PDPREPORT - Logs Email
+    message: |+
       DATE TIME - Please find the attached log(s) for the  'PDPREPORT' job stream.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [pdpreport.log]
   success:
-    subject: ENV - PDPREPORT - Success Email
-    message: >
+    subject: (ENV) - PDPREPORT - Success Email
+    message: |+
       DATE TIME - The 'PDPREPORT' job stream has completed successfully, please find the attached log.'
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -33,8 +33,8 @@ outputs:
     attachments:
     - GlobFileFilter: [pdpreport.log]
   dlv_dailyrpt_report:
-    subject: ENV - UAF-PDPRPT-DLV-DAILYRPT - PDP/AP/CRT Team Review
-    message: >
+    subject: (ENV) - UAF-PDPRPT-DLV-DAILYRPT - PDP/AP/CRT Team Review
+    message: |+
       DATE TIME - Attached is/are the report(s) that reflect the summary
       breakdown by type and source of payments that are ELIGIBLE to be formatted via 
       the online process based on the date(s) shown on the corresponding report(s).
@@ -54,8 +54,8 @@ outputs:
     attachments:
     - GlobFileFilterTracker: [pdp_daily_*.pdf]
   dlv_dailyrpt_success:
-    subject: ENV - UAF-PDPRPT-DLV-DAILYRPT - SUCCESS 
-    message: >
+    subject: (ENV) - UAF-PDPRPT-DLV-DAILYRPT - SUCCESS 
+    message: |+
       Job name: UAF-PDPRPT-DLV-DAILYRPT
       Run date: DATE TIME
     to: 

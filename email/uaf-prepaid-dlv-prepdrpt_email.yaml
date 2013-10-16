@@ -2,8 +2,8 @@
 name: UAF-PREPAID-DLV-PREPDRPT
 outputs:
   start:
-    subject: ENV - UAF-PREPAID-DLV-PREPDRPT - Start Notice
-    message: >
+    subject: (ENV) - UAF-PREPAID-DLV-PREPDRPT - Start Notice
+    message: |+
       The 'UAF-PREPAID-DLV-PREPDRPT' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-PREPAID-DLV-PREPDRPT - Log Email
-    message: >
+    subject: (ENV) - UAF-PREPAID-DLV-PREPDRPT - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-PREPAID-DLV-PREPDRPT' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-prepaid-dlv-prepdrpt.log]
   report:
-    subject: ENV - UAF-PREPAID-DLV-PREPDRPT - SA/HCM Payment Interface Report, PDP/AP Team Review
-    message: >
+    subject: (ENV) - UAF-PREPAID-DLV-PREPDRPT - SA/HCM Payment Interface Report, PDP/AP Team Review
+    message: |+
       DATE TIME - Attached is the report that shows the results and/or provides
       information on the results of the payment interface file(s) processed for the
       day.

@@ -2,8 +2,8 @@
 name: UAF-ARCHV-EXE-EINVOICE
 outputs:
   start:
-    subject: ENV - UAF-ARCHV-EXE-EINVOICE - Start Notice
-    message: >
+    subject: (ENV) - UAF-ARCHV-EXE-EINVOICE - Start Notice
+    message: |+
       The 'UAF-ARCHV-EXE-EINVOICE' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-ARCHV-EXE-EINVOICE - Log Email
-    message: >
+    subject: (ENV) - UAF-ARCHV-EXE-EINVOICE - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-ARCHV-EXE-EINVOICE' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -20,8 +20,8 @@ outputs:
     attachment_dirs:
     attachments:
   report:
-    subject: ENV - UAF-ARCHV-EXE-EINVOICE - Report Email
-    message: >
+    subject: (ENV) - UAF-ARCHV-EXE-EINVOICE - Report Email
+    message: |+
       Please find the attached report(s) for the  'UAF-ARCHV-EXE-EINVOICE' process.
     to:
     - KATT_AUTOMATION_ADDRESS

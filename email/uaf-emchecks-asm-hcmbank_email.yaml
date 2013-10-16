@@ -2,8 +2,8 @@
 name: UAF-EMCHECKS-ASM-HCMBANK
 outputs:
   start:
-    subject: ENV - UAF-EMCHECKS-ASM-HCMBANK - Start Notice
-    message: >
+    subject: (ENV) - UAF-EMCHECKS-ASM-HCMBANK - Start Notice
+    message: |+
       DATE TIME - The 'UAF-EMCHECKS-ASM-HCMBANK' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-EMCHECKS-ASM-HCMBANK - Logs Email
-    message: >
+    subject: (ENV) - UAF-EMCHECKS-ASM-HCMBANK - Logs Email
+    message: |+
       Please find the attached log(s) for the  'UAF-EMCHECKS-ASM-HCMBANK' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-emchecks-asm-hcmbank.log]
   success:
-    subject: ENV - UAF-EMCHECKS-ASM-HCMBANK - SUCCESS, HCM ACH Bank file sent
-    message: >
+    subject: (ENV) - UAF-EMCHECKS-ASM-HCMBANK - SUCCESS, HCM ACH Bank file sent
+    message: |+
       Job name: UAF-EMCHECKS-ASM-HCMBANK
       Run date: DATE TIME
     to:

@@ -2,8 +2,8 @@
 name: UAF-ASSETDEP-DLV-GLRPTS
 outputs:
   start:
-    subject: ENV - UAF-ASSETDEP-DLV-GLRPTS - Start Notice
-    message: >
+    subject: (ENV) - UAF-ASSETDEP-DLV-GLRPTS - Start Notice
+    message: |+
       The 'UAF-ASSETDEP-DLV-GLRPTS' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-ASSETDEP-DLV-GLRPTS - Log Email
-    message: >
+    subject: (ENV) - UAF-ASSETDEP-DLV-GLRPTS - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-ASSETDEP-DLV-GLRPTS' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-assetdep-dlv-glrpts.log]
   report:
-    subject: ENV - UAF-ASSETDEP-DLV-GLRPTS - General Ledger Processing Report(s) - FP Team Review
-    message: >
+    subject: (ENV) - UAF-ASSETDEP-DLV-GLRPTS - General Ledger Processing Report(s) - FP Team Review
+    message: |+
       DATE TIME -  Regarding the completion of GL Reports
     to:
     - FSO_KFS_REPORTS_FIN_MGMT

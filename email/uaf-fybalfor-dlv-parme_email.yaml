@@ -2,8 +2,8 @@
 name: UAF-FYBALFOR-DLV-PARME
 outputs:
   start:
-    subject: ENV - UAF-FYBALFOR-DLV-PARME - Start Notice
-    message: >
+    subject: (ENV) - UAF-FYBALFOR-DLV-PARME - Start Notice
+    message: |+
       The 'UAF-FYBALFOR-DLV-PARME' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -11,8 +11,8 @@ outputs:
     attachment_dirs:
     attachments:
   log:
-    subject: ENV - UAF-FYBALFOR-DLV-PARME - Log Email
-    message: >
+    subject: (ENV) - UAF-FYBALFOR-DLV-PARME - Log Email
+    message: |+
       Please find the attached log(s) for the  'UAF-FYBALFOR-DLV-PARME' process.
     to:
     - KATT_AUTOMATION_ADDRESS
@@ -22,8 +22,8 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-fybalfor-dlv-parme.log]
   report:
-    subject: ENV - UAF-FYBALFOR-DLV-PARME - Balance Forward Job Year End 
-    message: >
+    subject: (ENV) - UAF-FYBALFOR-DLV-PARME - Balance Forward Job Year End 
+    message: |+
       DATE TIME - The Balance Forward process is being prepared to run soon, but
       has been placed on hold. Please review the following KFS parameters to ensure
       they are set appropriately for the job to run as desired. 
