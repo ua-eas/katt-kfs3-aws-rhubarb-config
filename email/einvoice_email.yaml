@@ -54,5 +54,5 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/reports/purap
     attachments:
-    - GlobFileFilterTracker: [electronicInvoiceExtractJob-*.txt]
+    - GlobFileFilterTracker: [electronicInvoiceExtractJob-*.log]
   
