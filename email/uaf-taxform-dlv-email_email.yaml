@@ -27,6 +27,7 @@ outputs:
       The 'UAF-TAXFORM-DLV-EMAIL' job completed successfully on DATE TIME. This corresponds to the 1099 tax processing.
     to:
     - FSO_1099_TEAM_ADDRESS
+    - FSO_ENT_SUPPORT
     cc:
     attachment_dirs:
     attachments:
