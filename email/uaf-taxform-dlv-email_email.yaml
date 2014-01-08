@@ -24,7 +24,7 @@ outputs:
   success:
     subject: (ENV) - UAF-TAXFORM-DLV-EMAIL - Success Email
     message: |+
-      The 'UAF-TAXFORM-DLV-EMAIL' job completed successfully on DATE TIME. This corresponds to the 1099 tax processing.
+      The 'TAXFORM' jobs completed successfully on DATE TIME. This corresponds to the 1099 tax processing.
     to:
     - FSO_1099_TEAM_ADDRESS
     - FSO_ENT_SUPPORT
