@@ -37,16 +37,11 @@ outputs:
     message: |+
       The financial processing portion of the ENV nightly batch for today, DATE, has completed at TIME.
 
-      That means that the following jobs streams have all finished executing:
-      Archibus Processing (if applicable)
-      Core Accounting Segment (if applicable)
-      PCard Processing Segment
-      eInvoice and SciQuest processing
-      Bank Transaction Processing Segment (if applicable)
+      That means that the following jobs streams have all finished executing: Archibus Processing (if applicable), Core Accounting Segment (if applicable), PCard Processing Segment, eInvoice and SciQuest processing, Bank Transaction Processing Segment (if applicable).
 
-      If any special schedules, such as Month End or Annual processing ran, those were not explicity accounted for in this email, but if they failed to compelete then one of the above segments would not have completed, and you would not have received this email. So, this implies that they too completed.
+      If any special schedules, such as Month End or Annual processing ran, those were not explicitly accounted for in this email, but if they failed to complete then one of the above segments would not have completed, and you would not have received this email. So, this implies that they too completed.
 
-      The overall nightly batch should still be checked. Some jobs are designed to continue, even upon a KFS batch job failure status. However, by receiving this email it does imply that the Nightly Batch did fully execute and that no criical jobs have failed (those that do not continue on failure).
+      The overall nightly batch should still be checked. Some jobs are designed to continue, even upon a KFS batch job failure status. However, by receiving this email it does imply that the Nightly Batch did fully execute and that no critical jobs have failed (those that do not continue on failure).
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
