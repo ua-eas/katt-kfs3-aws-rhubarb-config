@@ -1,0 +1,48 @@
+---
+name: AUTOCLOSE
+outputs:
+  start:
+    subject: (ENV) - AUTOCLOSE - Job Stream Start Notice
+    message: |+
+      DATE TIME - The 'AUTOCLOSE' job stream has started.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    attachments:
+  log:
+    subject: (ENV) - AUTOCLOSE - Logs Email
+    message: |+
+      DATE TIME - Please find the attached log(s) for the  'AUTOCLOSE' job stream.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [autoclose.log]
+  success:
+    subject: (ENV) - AUTOCLOSE - Success Email
+    message: |+
+      DATE TIME - The 'AUTOCLOSE' job stream has completed successfully, please find the attached log.'
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [autoclose.log]
+  dlv_clsporpt_report:
+    subject: (ENV) - UAF-AUTOCLS-DLV-CLSPORPT - Report Email
+    message: |+
+      DATE TIME - Attached is/are the report(s) that show the results and/or
+      provide information on any error conditions found, if any, as a result of any 
+      PO Close files that were processed for the day.
+    to: 
+    - KFS_PACS_ERRORS_ADDRESS
+    cc: 
+    - KFS_BSA_ADDRESS
+    attachment_dirs:
+    - BATCH_HOME/reports/purap
+    attachments:
+    - GlobFileFilterTracker: [autoClose*.log]
