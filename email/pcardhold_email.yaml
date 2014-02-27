@@ -16,6 +16,7 @@ outputs:
       DATE TIME - Please find the attached log(s) for the  'PCARDHOLD' job stream.
     to:
     - KATT_AUTOMATION_ADDRESS
+    - KFS_BSA_ADDRESS
     cc:
     attachment_dirs:
     - BATCH_HOME/logs
