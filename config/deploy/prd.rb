@@ -1,4 +1,4 @@
-set :stage, :prod
+set :stage, :prd
 
 # Deploy to a50, and a51
 role :app, "kualiadm@uaz-kc-a50.mosaic.arizona.edu", "kualiadm@uaz-kc-a51.mosaic.arizona.edu"
