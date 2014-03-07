@@ -47,7 +47,7 @@ outputs:
       a payment on hold, prior to performing the actual format process that would
       affect the payments that actually are made.
     to: 
-    - FEDEX_ADMIN_ADDRESS
+    - CHECK_CONTROL_ADDRESS
     cc: 
     attachment_dirs:
     - BATCH_HOME/reports/pdp
