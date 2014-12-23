@@ -22,11 +22,11 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-bank-dlv-docrpt.log]
   report:
-    subject: (ENV) - UAF-BANK-DLV-DOCRPT - Bank Load Error report - ???? Team Review
+    subject: (ENV) - UAF-BANK-DLV-DOCRPT - Bank Load Error report - Cash Accounting Team Review
     message: |+
       DATE TIME - Attached is/are the report(s) that show the results and/or
       provide information on any error conditions found, if any, as a result of any
-      eInvoice files that were processed for the day.
+      bank transactions files that were processed for the day.
     to:
     - FM_NON_OPERATING_FUNDS_ADDRESS
     attachment_dirs:
