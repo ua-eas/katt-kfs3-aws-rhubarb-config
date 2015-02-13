@@ -31,4 +31,4 @@ outputs:
     attachment_dirs:
     - BATCH_HOME/reports/cab
     attachments:
-    - GlobFileFilterTracker: [cab_batch_status_report_*.pdf]
+    - GlobFileFilterTracker: [cab_batch_mismatch_report_*.pdf]
