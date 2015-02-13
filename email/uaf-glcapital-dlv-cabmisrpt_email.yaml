@@ -1,0 +1,34 @@
+---
+name: UAF-GLCAPITAL-DLV-CABMISRPT
+outputs:
+  start:
+    subject: (ENV) - UAF-GLCAPITAL-DLV-CABMISRPT - Start Notice
+    message: |+
+      The 'UAF-GLCAPITAL-DLV-CABRPT' process has started.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    attachments:
+  log:
+    subject: (ENV) - UAF-GLCAPITAL-DLV-CABMISRPT - Log Email
+    message: |+
+      Please find the attached log(s) for the  'UAF-GLCAPITAL-DLV-CABMISRPT' process.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+     - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [uaf-glcapital-dlv-cabmisrpt.log]
+  report:
+    subject: (ENV) - UAF-GLCAPITAL-DLV-CABMISRPT - CAB Mismatch Report - CAM Team Review
+    message: |+
+      DATE TIME - Attached is the report reflecting errors found from processing the asset related data created within the purchasing and/or accounts payable areas. Please review these items and take action as necessary to correct these situations.
+    to:
+    - KFS_CAPITAL_ASSETS_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/reports/cab
+    attachments:
+    - GlobFileFilterTracker: [cab_batch_status_report_*.pdf]
