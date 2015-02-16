@@ -28,6 +28,7 @@ outputs:
     to:
     - KFS_CAPITAL_ASSETS_ADDRESS
     cc:
+    - KFS_BSA_ADDRESS
     attachment_dirs:
     - BATCH_HOME/reports/cab
     attachments:
