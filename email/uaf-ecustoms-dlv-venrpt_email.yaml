@@ -22,14 +22,13 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-ecustoms-dlv-venrpt.log]
   report:
-    subject: (ENV) - UAF-ECUSTOMS-DLV-VENRPT - eCustoms File sent to ASU - AP Team Review
+    subject: (ENV) - UAF-ECUSTOMS-DLV-VENRPT - ASU eCustoms file and record count - AP Team Review 
     message: |+
-      Attached is the data file that was produced from the 'Format Checks/ACH'
-      process.  This file was sent to ASU and is attached for your review.
+      Please see the attached reports.
     to:
     - UA_CUSTOMS_ADDRESS
     cc:
     attachment_dirs:
-    - BATCH_HOME/staging/pdp/ecustoms
+    - BATCH_HOME/staging/vnd/ecustoms
     attachments:
-    - GlobFileFilter: [UA_ECUSTOMS.data]
+    - GlobFileFilter: [UA_ECUSTOMS.data, UA_ECUSTOMS.txt]
