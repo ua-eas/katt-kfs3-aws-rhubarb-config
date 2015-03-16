@@ -42,17 +42,13 @@ outputs:
     attachment_dirs:
     attachments:
   dlv_einvextr_report:
-    subject: (ENV) - UAF-EINV-DLV-EINVEXTR - eInvoice Processing Information - PACS/AP Team Review
+    subject: (ENV) - UAF-EINV-DLV-EINVEXTR - eInvoice Files Successfully Loaded - PACS/AP Team Review
     message: |+
-      DATE TIME - Attached is/are the report(s) that show the results and/or
-      provide information on any error conditions found, if any, as a result of any 
-      eInvoice files that were processed for the day.
+      DATE TIME - The electronicInvoiceExtractJob successfully ran in KFS.
     to: 
     - KFS_BSA_ADDRESS
     cc: 
     - FSO_EIRT_ADDRESS
     attachment_dirs:
-    - BATCH_HOME/reports/purap
     attachments:
-    - GlobFileFilterTracker: [electronicInvoiceExtractJob-*.log]
   
