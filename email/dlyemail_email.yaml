@@ -1,0 +1,34 @@
+---
+name: DLYEMAIL
+outputs:
+  start:
+    subject: (ENV) - DLYEMAIL - Job Stream Start Notice
+    message: |+
+      DATE TIME - The 'DLYEMAIL' job stream has started.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    attachments:
+  log:
+    subject: (ENV) - DLYEMAIL - Logs Email
+    message: |+
+      DATE TIME - Please find the attached log(s) for the  'DLYEMAIL' job stream.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [dlyemail.log]
+  success:
+    subject: (ENV) - DLYEMAIL - Success Email
+    message: |+
+      DATE TIME - The 'DLYEMAIL' job stream has completed successfully, please find the attached log.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [dlyemail.log]
