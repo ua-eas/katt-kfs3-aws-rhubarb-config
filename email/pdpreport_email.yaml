@@ -33,7 +33,7 @@ outputs:
     attachments:
     - GlobFileFilter: [pdpreport.log]
   dlv_dailyrpt_report:
-    subject: (ENV) - UAF-PDPRPT-DLV-DAILYRPT - PDP/AP/CRT Team Review
+    subject: (ENV) - UAF-PDPRPT-DLV-DAILYRPT - PDP Daily Report(s) - AP/PDP Team Review
     message: |+
       DATE TIME - Attached is/are the report(s) that reflect the summary
       breakdown by type and source of payments that are ELIGIBLE to be formatted via 
@@ -49,6 +49,7 @@ outputs:
     to: 
     - CHECK_CONTROL_ADDRESS
     cc: 
+    - KFS_BSA_ADDRESS
     attachment_dirs:
     - BATCH_HOME/reports/pdp
     attachments:
