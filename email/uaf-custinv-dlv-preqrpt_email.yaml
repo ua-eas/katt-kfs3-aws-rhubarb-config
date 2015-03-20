@@ -28,9 +28,8 @@ outputs:
       provide information on any error conditions found, if any, as a result of any
       preq auto approves that were processed for the day.
     to:
-    - FSO_PDP_ADDRESS
+    - TECH_REP_ADDRESS
     cc:
-    - CHECK_CONTROL_ADDRESS
     - KFS_BSA_ADDRESS
     attachment_dirs:
     - BATCH_HOME/reports/purap
