@@ -24,9 +24,9 @@ outputs:
   report:
     subject: (ENV) - UAF-BANK-DLV-DOCRPT - Bank Load Error report - Cash Accounting Team Review
     message: |+
-      DATE TIME - Attached is/are the report(s) that show the results and/or
-      provide information on any error conditions found, if any, as a result of any
-      bank transactions files that were processed for the day.
+      DATE TIME - If error conditions were found as a result of any bank transaction files
+      processed for the day, reports on these errors will be attached to this email.
+      If there are no attachments, no errors were found.
     to:
     - FM_NON_OPERATING_FUNDS_ADDRESS
     attachment_dirs:
