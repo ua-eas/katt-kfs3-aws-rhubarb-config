@@ -24,9 +24,8 @@ outputs:
   report:
     subject: (ENV) - UAF-PREPAID-DLV-PREPDRPT - SA/HCM Payment Interface Report, PDP/AP Team Review
     message: |+
-      DATE TIME - Attached is the report that shows the results and/or provides
-      information on the results of the payment interface file(s) processed for the
-      day.
+      DATE TIME - Attached are the report(s) on the PSSA hand drawn checks processed for the day.
+      If there are no attachments no files were found.
     to:
     - FSO_PDP_ADDRESS
     cc:
