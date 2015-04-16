@@ -1,0 +1,34 @@
+---
+name: ERECALC
+outputs:
+  start:
+    subject: (ENV) - ERECALC - Job Stream Start Notice
+    message: |+
+      DATE TIME - The 'ERECALC' job stream has started.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    attachments:
+  log:
+    subject: (ENV) - ERECALC - Logs Email
+    message: |+
+      DATE TIME - Please find the attached log(s) for the  'ERECALC' job stream.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [erecalc.log]
+  success:
+    subject: (ENV) - ERECALC - Success Email
+    message: |+
+      DATE TIME - The 'ERECALC' job stream has completed successfully, please find the attached log.'
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [erecalc.log]
