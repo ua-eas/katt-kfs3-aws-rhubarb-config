@@ -1,0 +1,34 @@
+---
+name: ERESWEEP
+outputs:
+  start:
+    subject: (ENV) - ERESWEEP - Job Stream Start Notice
+    message: |+
+      DATE TIME - The 'ERESWEEP' job stream has started.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    attachments:
+  log:
+    subject: (ENV) - ERESWEEP - Logs Email
+    message: |+
+      DATE TIME - Please find the attached log(s) for the  'ERESWEEP' job stream.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [eresweep.log]
+  success:
+    subject: (ENV) - ERESWEEP - Success Email
+    message: |+
+      DATE TIME - The 'ERESWEEP' job stream has completed successfully, please find the attached log.'
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [eresweep.log]

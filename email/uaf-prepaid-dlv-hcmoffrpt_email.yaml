@@ -22,15 +22,15 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-prepaid-dlv-hcmoffrpt.log]
   report:
-    subject: (ENV) - UAF-PREPAID-DLV-HCMOFFRPT - HCM off-cycle checks, PDP/APTeam Review
+    subject: (ENV) - UAF-PREPAID-DLV-HCMOFFRPT - HCM off-cycle checks, PDP/AP Team Review
     message: |+
-      DATE TIME - Attached is/are the report(s) that show the results and/or
-      provide information on any error conditions found, if any, as a result of any
-      eInvoice files that were processed for the day.
+      DATE TIME - Attached are the report(s) of the HCM off-cycle checks processed for the day.
+      If there are no attachments no files were found.
     to:
     - FM_NON_OPERATING_FUNDS_ADDRESS
     cc:
     - CHECK_CONTROL_ADDRESS
+    - FSO_PDP_ADDRESS
     - KFS_BSA_ADDRESS
     attachment_dirs:
     - BATCH_HOME/staging/pdp/prepaidChecks
