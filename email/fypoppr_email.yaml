@@ -1,0 +1,34 @@
+---
+name: FYPOPPR
+outputs:
+  start:
+    subject: (ENV) - FYPOPPR - Job Stream Start Notice
+    message: |+
+      DATE TIME - The 'FYPOPPR' job stream has started.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    attachments:
+  log:
+    subject: (ENV) - FYPOPPR - Logs Email
+    message: |+
+      DATE TIME - Please find the attached log(s) for the  'FYPOPPR' job stream.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [fypoppr.log]
+  success:
+    subject: (ENV) - FYPOPPR - Success Email
+    message: |+
+      DATE TIME - The 'FYPOPPR' job stream has completed successfully, please find the attached log.'
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [fypoppr.log]
