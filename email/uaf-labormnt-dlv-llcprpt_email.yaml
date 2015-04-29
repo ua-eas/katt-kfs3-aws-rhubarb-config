@@ -35,6 +35,7 @@ outputs:
     - FSO_PAYROLL_ADDRESS
     cc:
     - FSO_KFS_REPORTS_FIN_MGMT
+    - KFS_BSA_ADDRESS
     attachment_dirs:
     - BATCH_HOME/reports/ld
     attachments:
