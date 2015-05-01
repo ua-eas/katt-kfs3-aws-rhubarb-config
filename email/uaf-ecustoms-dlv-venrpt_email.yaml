@@ -28,6 +28,7 @@ outputs:
     to:
     - UA_CUSTOMS_ADDRESS
     cc:
+    - KFS_BSA_ADDRESS
     attachment_dirs:
     - BATCH_HOME/staging/vnd/ecustoms
     attachments:
