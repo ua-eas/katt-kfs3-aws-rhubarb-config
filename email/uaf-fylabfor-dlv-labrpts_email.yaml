@@ -22,11 +22,18 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-fylabfor-dlv-labrpt.log]
   report:
-    subject: (ENV) - UAF-FYLABFOR-DLV-LABRPTS - Review parms for Encumbrance Forward Job
+    subject: (ENV) - UAF-FYLABFOR-DLV-LABRPTS - Email latest labor reports
     message: |+
-      DATE TIME -  Please check the parms for Encumbrance Forward Job.
+      DATE TIME - The latest labor reports.
     to:
-    - FSO_KFS_REPORTS_FIN_MGMT
+    - FSO_PAYROLL_ADDRESS
     cc:
+    - KFS_BSA_ADDRESS
     attachment_dirs:
+    - BATCH_HOME/reports/ld
     attachments:
+    - GlobFileFilterTracker: [llcp_*_*.txt,                                           
+                              laborScrubberJob_*.txt,
+                              laborPosterJob_*.txt,
+                              laborBalancing_*.txt,
+                              labor_gl_summary_ledger_*.txt]
