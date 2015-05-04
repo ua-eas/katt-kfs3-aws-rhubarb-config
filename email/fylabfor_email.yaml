@@ -1,0 +1,34 @@
+---
+name: FYLABFOR
+outputs:
+  start:
+    subject: (ENV) - FYLABFOR - Job Stream Start Notice
+    message: |+
+      DATE TIME - The 'FYLABFOR' job stream has started.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    attachments:
+  log:
+    subject: (ENV) - FYLABFOR - Logs Email
+    message: |+
+      DATE TIME - Please find the attached log(s) for the  'FYLABFOR' job stream.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [fylabfor.log]
+  success:
+    subject: (ENV) - FYLABFOR - Success Email
+    message: |+
+      DATE TIME - The 'FYLABFOR' job stream has completed successfully, please find the attached log.'
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [fylabfor.log]
