@@ -33,8 +33,9 @@ outputs:
       File location/name:
       BATCH_HOME/reports/ld/labor_year_end_balance_forward_*.txt
     to:
-    - FSO_KFS_REPORTS_FIN_MGMT
+    - FSO_PAYROLL_ADDRESS
     cc:
+    - KFS_BSA_ADDRESS
     attachment_dirs:
     - BATCH_HOME/reports/ld
     attachments:
