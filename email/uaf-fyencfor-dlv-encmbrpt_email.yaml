@@ -30,6 +30,7 @@ outputs:
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
+    - KFS_BSA_ADDRESS
     attachment_dirs:
     - BATCH_HOME/staging/gl
     attachments:
