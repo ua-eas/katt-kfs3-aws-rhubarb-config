@@ -36,6 +36,9 @@ outputs:
     to:
     - FSO_PAYROLL_ADDRESS
     cc:
+    - KFS_BSA_ADDRESS
+    - FSO_RATE_STUDIES_ADDRESS
+    - FSO_KFS_REPORTS_FIN_MGMT
     attachment_dirs:
     - BATCH_HOME/reports/ld
     attachments:
