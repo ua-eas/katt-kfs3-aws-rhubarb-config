@@ -1,4 +1,5 @@
 ---
+ARL_BILLING_ADDRESS: katt-automation@list.arizona.edu
 BOOKSTORE_ADDRESS: katt-automation@list.arizona.edu
 BUDGET_OFFICE_EMAIL: katt-automation@list.arizona.edu
 CHECK_CONTROL_ADDRESS: katt-automation@list.arizona.edu
@@ -37,4 +38,5 @@ SPONSER_ADDRESS: katt-automation@list.arizona.edu
 TECH_REP_ADDRESS: katt-automation@list.arizona.edu
 UA_CENTRAL_RECEIVING_ADDRESS: katt-automation@list.arizona.edu
 UA_CUSTOMS_ADDRESS: katt-automation@list.arizona.edu
+URIC_BILLING_ADDRESS: katt-automation@list.arizona.edu
 WINKLE_P_ADDRESS: katt-automation@list.arizona.edu
