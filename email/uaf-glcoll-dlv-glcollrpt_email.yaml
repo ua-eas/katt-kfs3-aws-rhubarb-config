@@ -22,7 +22,7 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-glcoll-dlv-glcollrpt.log]
   report:
-    subject: (ENV) - UAF-GLCOLL-DLV-GLCOLLRPT - GL Collector Reporting, CRT Team Review
+    subject: (ENV) - UAF-GLCOLL-DLV-GLCOLLRPT - GL Collector Reporting - CRT Team Review
     message: |+
       DATE TIME - Attached are the report(s) that provide the results associated
       with the external file(s) processed for the general ledger through the collector

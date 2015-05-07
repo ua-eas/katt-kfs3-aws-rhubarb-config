@@ -28,7 +28,6 @@ outputs:
       Run date: DATE TIME
     to:
     - FSO_KFS_REPORTS_FIN_MGMT
-    - JENNIFER_PIERSON_ADDRESS
     cc:
     attachment_dirs:
     - BATCH_HOME/logs
