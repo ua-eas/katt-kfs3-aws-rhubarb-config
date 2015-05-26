@@ -28,6 +28,7 @@ outputs:
     to:
     - FSO_KFS_REPORTS_FIN_MGMT
     cc:
+    - KFS_BSA_ADDRESS
     attachment_dirs:
     - BATCH_HOME/reports/gl
     attachments:
