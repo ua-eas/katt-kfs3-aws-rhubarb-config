@@ -1,0 +1,34 @@
+---
+name: LABHIST
+outputs:
+  start:
+    subject: (ENV) - LABHIST - Job Stream Start Notice
+    message: |+
+      DATE TIME - The 'LABHIST' job stream has started.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    attachments:
+  log:
+    subject: (ENV) - LABHIST - Logs Email
+    message: |+
+      DATE TIME - Please find the attached log(s) for the  'LABHIST' job stream.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [labhist.log]
+  success:
+    subject: (ENV) - LABHIST - Success Email
+    message: |+
+      DATE TIME - The 'LABHIST' job stream has completed successfully, please find the attached log.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [labhist.log]
