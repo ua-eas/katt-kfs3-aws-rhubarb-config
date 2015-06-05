@@ -22,13 +22,17 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-fynomact-dlv-nomarpt.log]
   report:
-    subject: (ENV) - UAF-FYNOMACT-DLV-NOMARPT - General Ledger Correction Process
+    subject: (ENV) - UAF-FYNOMACT-DLV-NOMARPT - Nominal Activity Closing Report
     message: |+
-      DATE TIME - Notifying that the notify to process files created from prior
-      processes with GLCP and that jobs are on hold pending processing of file and
-      tech team needs notified when ready to release.
+      DATE TIME - Fiscal Year End Nominal Activity Processing is on hold. Please do the following:
+      1. Verify that the gl_close_nominal_activity.data file is in the correct staging area (staging/gl/orginEntry).
+      2. Contact the on-call MET member to request that a matching .done file (gl_close_nominal_activity.done) be created in the same directory.
+      3. Once items 1 and 2 are complete, call Operations and request that job UAF-FYNOMACT-EXE-GLSCRB be confirmed.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
+    - KFS_BSA_ADDRESS
     attachment_dirs:
+    - BATCH_HOME/reports/gl
     attachments:
+    - GlobFileFilterTracker: [year_end_nominal_activity_closing_*.txt]
