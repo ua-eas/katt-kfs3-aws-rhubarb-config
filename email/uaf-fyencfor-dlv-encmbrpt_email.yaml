@@ -32,6 +32,6 @@ outputs:
     cc:
     - KFS_BSA_ADDRESS
     attachment_dirs:
-    - BATCH_HOME/staging/gl
+    - BATCH_HOME/reports/gl
     attachments:
     - GlobFileFilterTracker: [year_end_encumbrance_closing_*.txt]
