@@ -31,4 +31,6 @@ outputs:
     cc:
     - KFS_BSA_ADDRESS
     attachment_dirs:
+    - BATCH_HOME/reports/sys
     attachments:
+    - GlobFileFilterTracker: [autoDisapproveErrors*.txt]
