@@ -22,13 +22,15 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-venannual-dlv-venrpt.log]
   report:
-    subject: (ENV) - UAF-VENANNUAL-DLV-VENRPT - ASU Customs File
+    subject: (ENV) - UAF-VENANNUAL-DLV-VENRPT - ASU Customs File and Record Count
     message: |+
       DATE TIME - Please see the attached reports.
     to:
     - UA_CUSTOMS_ADDRESS
     cc:
+    - KFS_BSA_ADDRESS
     attachment_dirs:
-    - BATCH_HOME/pdp/ecustoms
+    - BATCH_HOME/vnd/ecustoms
     attachments:
-    - GlobFileFilter: [UA_ECUSTOMS.data]
+    - GlobFileFilterTracker: [UA_ECUSTOMS.data,
+                              UA_ECUSTOMS.txt]
