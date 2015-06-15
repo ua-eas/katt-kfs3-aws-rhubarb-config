@@ -22,15 +22,20 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-glmanprg-dlv-parme.log]
   report:
-    subject: (ENV) - UAF-GLMANPRG-DLV-PARME - Review and Confirm Manual Purge Parameters, Financial Processing Team Review 
+    subject: (ENV) - UAF-GLMANPRG-DLV-PARME - Review and Confirm Manual Purge Parameters - FP Team Review
     message: |+
-      DATE TIME - The first execution of the Manual Purge process is ready to be
-      ran, but has been placed on hold. Please review the KFS parameters found within
-      the KFS-GL namespace to ensure they are set appropriately for the job to run as
-      desired.
+      DATE TIME - The execution of the General Ledger Manual Purge process is ready
+      to be run, but has been placed on hold. Please review the following KFS  
+      parameters to ensure they are set appropriately for the job to run as desired:
+      KFS-GL  Purge Account Balances Step  PRIOR_TO_YEAR 
+      KFS-GL  Purge Balance Step  PRIOR_TO_YEAR 
+      KFS-GL  Purge Collector Detail Step  PRIOR_TO_YEAR 
+      KFS-GL  Purge Encumbrance Step  PRIOR_TO_YEAR 
+      KFS-GL  Purge Entry Step  PRIOR_TO_YEAR 
+      KFS-GL  Purge Sufficient Fund Balances Step  PRIOR_TO_YEAR
     to:
-    - KATT_AUTOMATION_ADDRESS
-    cc:
     - FSO_KFS_REPORTS_FIN_MGMT
+    cc:
+    - KFS_BSA_ADDRESS
     attachment_dirs:
     attachments:
