@@ -24,9 +24,8 @@ outputs:
   report:
     subject: (ENV) - UAF-EFFCEREXT-DLV-EFFCERRPT - Effort Cert Reports
     message: |+
-      DATE TIME - Please see the attached reports. When ready, place notify operations that
-      UAF-EFFCEREXT-DLV-EFFCERRPT can ber confirmed, so that the Effort Cert Create
-      job can be run.
+      DATE TIME - Please see the attached reports. When validated, confirm that the request 
+      for the Effort Cert Create job is logged and appropriate parameters are set.
     to:
     - KFS_BSA_ADDRESS
     cc:
