@@ -1,0 +1,34 @@
+---
+name: VENANNUAL
+outputs:
+  start:
+    subject: (ENV) - VENANNUAL - Job Stream Start Notice
+    message: |+
+      DATE TIME - The 'VENANNUAL' job stream has started.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    attachments:
+  log:
+    subject: (ENV) - VENANNUAL - Logs Email
+    message: |+
+      DATE TIME - Please find the attached log(s) for the  'VENANNUAL' job stream.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [venannual.log]
+  success:
+    subject: (ENV) - VENANNUAL - Success Email
+    message: |+
+      DATE TIME - The 'VENANNUAL' job stream has completed successfully, please find the attached log.'
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [venannual.log]

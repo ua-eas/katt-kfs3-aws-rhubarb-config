@@ -22,14 +22,14 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-fybalfor-dlv-balfrpt.log]
   report:
-    subject: (ENV) - UAF-FYBALFOR-DLV-BALFRPT - Report Email
+    subject: (ENV) - UAF-FYBALFOR-DLV-BALFRPT - Balance Forward Report
     message: |+
-      DATE TIME - Notifying that the notify to process files created from prior
-      processes with GLCP and that jobs are on hold pending processing of file and
-      tech team needs notified when ready to release.
+      DATE TIME - Attached is/are the report(s) that show the results and/or provide information on any 
+      error conditions found, if any, as a result of the Balance Forward batch job.
     to:
     - FSO_RATE_STUDIES_ADDRESS
     cc:
+    - KFS_BSA_ADDRESS
     attachment_dirs:
     - BATCH_HOME/reports/gl
     attachments:

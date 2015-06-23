@@ -1,0 +1,41 @@
+---
+name: UAF-EFFCEREXT-DLV-PARME
+outputs:
+  start:
+    subject: (ENV) - UAF-EFFCEREXT-DLV-PARME - Start Notice
+    message: |+
+      The 'UAF-EFFCEREXT-DLV-PARME' process has started.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    attachments:
+  log:
+    subject: (ENV) - UAF-EFFCEREXT-DLV-PARME - Log Email
+    message: |+
+      Please find the attached log(s) for the  'UAF-EFFCEREXT-DLV-PARME' process.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [uaf-effcerext-dlv-parme.log]
+  report:
+    subject: (ENV) - UAF-EFFCEREXT-DLV-PARME - Review and Confirm EC Parameters - Sponsored Projects Team Review
+    message: |+
+      DATE TIME - The first execution of the Effort Certification process is ready to be run, 
+      but has been placed on hold. Please review the following KFS parameters found 
+      within the KFS-EC namespace to ensure they are set appropriately for the job to run 
+      as desired:
+      CREATE_FISCAL_YEAR
+      CREATE_REPORT_NUMBER
+      FEDERAL_ONLY_BALANCE_IND
+      RUN_FISCAL_YEAR
+      RUN_REPORT_NUMBER
+    to:
+    - SPONSER_ADDRESS
+    cc:
+    - KFS_BSA_ADDRESS
+    attachment_dirs:
+    attachments:

@@ -22,14 +22,16 @@ outputs:
     attachments:
     - GlobFileFilter: [uaf-laborprg-dlv-parme.log]
   report:
-    subject: (ENV) - UAF-LABORPRG-DLV-PARME - Review and Confirm Labor Purge Parameters, Labor Ledger Team Review
+    subject: (ENV) - UAF-LABORPRG-DLV-PARME - Review and Confirm Labor Purge Parameters - LL Team Review
     message: |+
-      DATE TIME - The first execution of the Labor Purge process is ready to be
-      ran, but has been placed on hold. Please review the KFS parameters found
-      within the KFS-LD namespace to ensure they are set appropriately for the job to
-      run as desired.
+      DATE TIME - The execution of the Labor Ledger Purge process is ready
+      to be run, but has been placed on hold. Please review the following KFS  
+      parameters to ensure they are set appropriately for the job to run as desired:
+      KFS-LD  Labor Purge Balance Step  PRIOR_TO_YEAR
+      KFS-LD  Labor Purge Entry Step  PRIOR_TO_YEAR
     to:
     - FSO_KFS_REPORTS_FIN_MGMT
     cc:
+    - KFS_BSA_ADDRESS
     attachment_dirs:
     attachments:

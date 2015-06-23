@@ -24,10 +24,11 @@ outputs:
   report:
     subject: (ENV) - UAF-LABHIST-DLV-LABHISTRPT - Labor Balancing Reports
     message: |+
-      Please find the attached report(s) for the  'UAF-LABHIST-DLV-LABHISTRPT' process.
+      Please see the attached reports.
     to:
     - FSO_KFS_REPORTS_FIN_MGMT
     cc:
+    - KFS_BSA_ADDRESS
     attachment_dirs:
     - BATCH_HOME/reports/ld
     attachments:

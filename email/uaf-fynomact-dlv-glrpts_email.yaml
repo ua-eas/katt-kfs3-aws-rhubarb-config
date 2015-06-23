@@ -1,28 +1,28 @@
 ---
-name: UAF-FYBALFOR-DLV-GLRPTS
+name: UAF-FYNOMACT-DLV-GLRPTS
 outputs:
   start:
-    subject: (ENV) - UAF-FYBALFOR-DLV-GLRPTS - Start Notice
+    subject: (ENV) - UAF-FYNOMACT-DLV-GLRPTS - Start Notice
     message: |+
-      The 'UAF-FYBALFOR-DLV-GLRPTS' process has started.
+      The 'UAF-FYNOMACT-DLV-GLRPTS' process has started.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
     attachments:
   log:
-    subject: (ENV) - UAF-FYBALFOR-DLV-GLRPTS - Log Email
+    subject: (ENV) - UAF-FYNOMACT-DLV-GLRPTS - Log Email
     message: |+
-      Please find the attached log(s) for the  'UAF-FYBALFOR-DLV-GLRPTS' process.
+      Please find the attached log(s) for the  'UAF-FYNOMACT-DLV-GLRPTS' process.
     to:
     - KATT_AUTOMATION_ADDRESS
     cc:
     attachment_dirs:
     - BATCH_HOME/logs
     attachments:
-    - GlobFileFilter: [uaf-fybalfor-dlv-glrpts.log]
+    - GlobFileFilter: [uaf-fynomact-dlv-glrpts.log]
   report:
-    subject: (ENV) - UAF-FYBALFOR-DLV-GLRPTS - General Ledger reports
+    subject: (ENV) - UAF-FYNOMACT-DLV-GLRPTS - General Ledger Reports
     message: |+
       Please see the attached reports.
     to:
