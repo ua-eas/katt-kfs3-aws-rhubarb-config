@@ -1,0 +1,34 @@
+---
+name: UAF-EMCHKSA-DLV-ACHRPTS
+outputs:
+  start:
+    subject: (ENV) - UAF-EMCHKSA-DLV-ACHRPTS - Start Notice
+    message: |+
+      DATE TIME - The 'UAF-EMCHKSA-DLV-ACHRPTS' process has started.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    attachments:
+  log:
+    subject: (ENV) - UAF-EMCHKSA-DLV-ACHRPTS - Log Email
+    message: |+
+      DATE TIME - Please find the attached log(s) for the  'UAF-EMCHKSA-DLV-ACHRPTS' process.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [uaf-emchksa-dlv-achrpts.log]
+  report:
+    subject: (ENV) - UAF-EMCHKSA-DLV-ACHRPTS - ACH Interface Reporting - AP Team Review
+    message: |+
+      Attached are the reports that provide the results of processing the ACH bank setup and the ACH/Direct Deposit setup information from both the UAccess Employee and UAccess Student Administration interface files. These reports should be reviewed for any issues that resulted from  processing these files. This interface process could have resulted in some default bank information having been established that will need updated appropriately. This will also affect what type and to which account a payment would occur for anyone scheduled to receive a payment from the UAccess Financials. 
+    to:
+    - CHECK_CONTROL_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/reports/pdp
+    attachments:
+    - GlobFileFilterTracker: [pdpLoadBankDataJob-ach_bank_audit_report_*.txt, pdpLoadPayeeACHDataJob-payee_ach_audit_report_*.txt]
