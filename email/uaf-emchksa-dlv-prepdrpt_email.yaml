@@ -1,0 +1,35 @@
+---
+name: UAF-EMCHKSA-DLV-PREPDRPT
+outputs:
+  start:
+    subject: (ENV) - UAF-EMCHKSA-DLV-PREPDRPT - Start Notice
+    message: |+
+      The 'UAF-EMCHKSA-DLV-PREPDRPT' process has started.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    attachments:
+  log:
+    subject: (ENV) - UAF-EMCHKSA-DLV-PREPDRPT - Log Email
+    message: |+
+      Please find the attached log(s) for the  'UAF-EMCHKSA-DLV-PREPDRPT' process.
+    to:
+    - KATT_AUTOMATION_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/logs
+    attachments:
+    - GlobFileFilter: [uaf-emchksa-dlv-prepdrpt.log]
+  report:
+    subject: (ENV) - UAF-EMCHKSA-DLV-PREPDRPT - SA/HCM Payment Interface Report, PDP/AP Team Review
+    message: |+
+      DATE TIME - Attached are the report(s) on the PSSA hand drawn checks processed for the day.
+      If there are no attachments no files were found.
+    to:
+    - FSO_PDP_ADDRESS
+    cc:
+    attachment_dirs:
+    - BATCH_HOME/reports/pdp/prepaidChecks
+    attachments:
+    - GlobFileFilterTracker: ["*.xml.report"]
