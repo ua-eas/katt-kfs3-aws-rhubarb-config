@@ -45,10 +45,17 @@ outputs:
     subject: (ENV) - UAF-EINV-DLV-EINVEXTR - eInvoice Files Successfully Loaded - PACS/AP Team Review
     message: |+
       DATE TIME - The electronicInvoiceExtractJob successfully ran in KFS.
+    
+      If there are any documents attached to this email, they are pending in the 
+      eInvoice staging directory after the job completed and will need to be 
+      investigated. Please contact Enterprise Applications for assistance. 
+      If there are no attachments, all documents have processed.
     to: 
     - KFS_BSA_ADDRESS
     cc: 
     - FSO_EIRT_ADDRESS
     attachment_dirs:
+    - BATCH_HOME/staging/purap/electronicInvoice
     attachments:
+    - GlobFileFilterTracker: [eInvoice_*.done, eInvoice_*.xml]
   
