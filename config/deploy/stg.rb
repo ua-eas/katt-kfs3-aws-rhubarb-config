@@ -1,6 +1,6 @@
 set :stage, :stg
 
-role :app, "kualiadm@uaz-kf-a07.mosaic.arizona.edu"
+role :app, %w{ssh-user@localhost:22}
 
 # set :rails_env, :stg
 set :branch, 'staging'
